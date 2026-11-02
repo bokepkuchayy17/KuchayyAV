@@ -11,7 +11,7 @@ const videos = [
     {
     id: "vid-6", title: "tocil cantik masih polos keenakan bgett",
     thumbnail: "https://ik.imagekit.io/lojojcfmt/20261102_213330.jpg?updatedAt=1793626515205", 
-    duration: "14:50", views: 6472, likes: 235,
+    duration: "3:19", views: 6472, likes: 235,
     category: "Lokal", description: "Video tocil yang sangat hyper dan bikin keenakan.",
     embedUrl: "https://streamtape.com/e/GkGReO4qxdTo39"
   },

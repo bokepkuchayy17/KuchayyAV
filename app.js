@@ -14,7 +14,7 @@ const videos = [
     duration: "10:15",
     views: 1500,
     likes: 120,
-    embedUrl: "https://tv1.indoav.app/e/LinkEmbedVideo1"
+    embedUrl: "https://tv1.indoav.app/e/Bwrj4aD0re4i"
   },
   {
     id: "vid-2",

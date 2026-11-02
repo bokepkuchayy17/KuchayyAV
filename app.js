@@ -4,7 +4,7 @@
 const AD_LINK = "https://uplcm.com/4/12170890";
 
 // ==========================================
-// DATA VIDEO (KONTEN ASLI ANDA)
+// DATA VIDEO (DENGAN KATEGORI & DESKRIPSI)
 // ==========================================
 const videos = [
   {
@@ -14,6 +14,8 @@ const videos = [
     duration: "14:50",
     views: 8739,
     likes: 657,
+    category: "Lokal", // 🆕
+    description: "Video tocil yang sangat hyper dan bikin keenakan. Kualitas gambar jernih dan suara jernih.", // 🆕
     embedUrl: "https://streamtape.com/e/MZVJj6Vpq9FmkBv"
   },
   {
@@ -23,6 +25,8 @@ const videos = [
     duration: "12:39",
     views: 2387,
     likes: 967,
+    category: "Lokal",
+    description: "Bocil hyper dengan pacarnya, adegan romantis dan menegangkan sepanjang video.",
     embedUrl: "https://streamtape.com/e/Y7x2ymkpMQhv7XG"
   },
   {
@@ -32,6 +36,8 @@ const videos = [
     duration: "3:42",
     views: 678,
     likes: 63,
+    category: "ABG",
+    description: "ABG dengan meki yang sangat mulus, durasi singkat tapi padat berisi.",
     embedUrl: "https://streamtape.com/e/VBXpYme7KKSKeLy"
   },
   {
@@ -41,6 +47,8 @@ const videos = [
     duration: "05:34",
     views: 3678,
     likes: 121,
+    category: "ABG",
+    description: "ABG dengan pantat bulat yang sangat hyper. Wajib ditonton!",
     embedUrl: "https://tv1.indoav.app/e/Bwrj4aD0re4i"
   },
   {
@@ -50,9 +58,12 @@ const videos = [
     duration: "20:16",
     views: 3400,
     likes: 897,
+    category: "Chindo",
+    description: "Dua chindo yang sedang keenakan, durasi panjang 20 menit penuh adegan hot.",
     embedUrl: "https://tv1.indoav.app/e/bqDoEXoFUgSx"
   },
   // --- TAMBAHKAN VIDEO BARU DI BAWAH INI ---
+  // Jangan lupa tambahkan "category" dan "description" juga ya
 ];
 
 const ITEMS_PER_PAGE = 12;
@@ -63,6 +74,7 @@ const appContainer = document.getElementById('app');
 // ==========================================
 let currentSearch = '';
 let currentSort = 'trending';
+let currentCategory = ''; // 🆕
 
 // ==========================================
 // FUNGSI BANTUAN
@@ -76,40 +88,33 @@ function parseDurationToSeconds(duration) {
   return parts.length === 2 ? parts[0] * 60 + parts[1] : (parts[0] || 0) * 60;
 }
 
-// 🆕 SISTEM LIKE
+// 🆕 DAFTAR KATEGORI UNIK
+function getUniqueCategories() {
+  const cats = videos.map(v => v.category).filter(Boolean);
+  return [...new Set(cats)];
+}
+
+// LIKE SYSTEM
 function getLikedVideos() {
-  try {
-    return JSON.parse(localStorage.getItem('likedVideos') || '[]');
-  } catch (e) { return []; }
+  try { return JSON.parse(localStorage.getItem('likedVideos') || '[]'); } catch (e) { return []; }
 }
-
-function isLiked(videoId) {
-  return getLikedVideos().includes(videoId);
-}
-
-function getDisplayLikes(video) {
-  return video.likes + (isLiked(video.id) ? 1 : 0);
-}
-
+function isLiked(videoId) { return getLikedVideos().includes(videoId); }
+function getDisplayLikes(video) { return video.likes + (isLiked(video.id) ? 1 : 0); }
 function toggleLike(videoId) {
   const liked = getLikedVideos();
   const idx = liked.indexOf(videoId);
-  if (idx > -1) liked.splice(idx, 1);
-  else liked.push(videoId);
+  if (idx > -1) liked.splice(idx, 1); else liked.push(videoId);
   localStorage.setItem('likedVideos', JSON.stringify(liked));
-  return idx === -1; // true = baru saja like
+  return idx === -1;
 }
-
 function handleLikeClick(event, videoId) {
-  event.preventDefault();
-  event.stopPropagation();
+  event.preventDefault(); event.stopPropagation();
   const nowLiked = toggleLike(videoId);
   const video = videos.find(v => v.id === videoId);
   const btn = event.currentTarget;
   btn.classList.toggle('liked', nowLiked);
   btn.innerHTML = `${nowLiked ? '❤️' : '♡'} ${formatNumber(getDisplayLikes(video))}`;
 }
-
 function handleWatchLike(videoId) {
   const nowLiked = toggleLike(videoId);
   const btn = document.getElementById('likeBtn');
@@ -117,12 +122,10 @@ function handleWatchLike(videoId) {
   btn.classList.toggle('liked', nowLiked);
   btn.textContent = nowLiked ? '❤️ Disukai' : '♡ Suka';
   const statLine = document.querySelector('.stat-line');
-  if (statLine) {
-    statLine.innerHTML = `${formatNumber(video.views)} tayangan • ${formatNumber(getDisplayLikes(video))} suka`;
-  }
+  if (statLine) statLine.innerHTML = `${formatNumber(video.views)} tayangan • ${formatNumber(getDisplayLikes(video))} suka`;
 }
 
-// 🆕 TOAST & SHARE
+// TOAST & SHARE
 function showToast(msg) {
   const toast = document.getElementById('toast');
   if (!toast) return;
@@ -130,34 +133,23 @@ function showToast(msg) {
   toast.classList.add('show');
   setTimeout(() => toast.classList.remove('show'), 2200);
 }
-
 async function handleShare(videoId) {
   const video = videos.find(v => v.id === videoId);
   if (!video) return;
   const url = `${window.location.origin}${window.location.pathname}?page=watch&id=${videoId}`;
-  
   if (navigator.share) {
     try {
-      await navigator.share({
-        title: video.title,
-        text: `Tonton "${video.title}" di Kuchayy AV`,
-        url: url
-      });
+      await navigator.share({ title: video.title, text: `Tonton "${video.title}" di Kuchayy AV`, url });
       return;
-    } catch (e) {
-      if (e.name === 'AbortError') return;
-    }
+    } catch (e) { if (e.name === 'AbortError') return; }
   }
-  
   try {
     await navigator.clipboard.writeText(url);
     showToast('Link berhasil disalin!');
-  } catch (e) {
-    prompt('Salin link ini:', url);
-  }
+  } catch (e) { prompt('Salin link ini:', url); }
 }
 
-// 🆕 INIT TEMA
+// TEMA & HAMBURGER
 function initTheme() {
   const themeToggle = document.getElementById('themeToggle');
   if (!themeToggle) return;
@@ -172,20 +164,30 @@ function initTheme() {
     localStorage.setItem('theme', isLight ? 'light' : 'dark');
   });
 }
-
-// 🆕 INIT HAMBURGER MENU
 function initMobileMenu() {
   const btn = document.getElementById('mobileMenu');
   const links = document.getElementById('mobileLinks');
   if (!btn || !links) return;
-  btn.addEventListener('click', () => {
-    links.classList.toggle('open');
-  });
+  btn.addEventListener('click', () => links.classList.toggle('open'));
   document.addEventListener('click', (e) => {
     if (links.classList.contains('open') && !links.contains(e.target) && !btn.contains(e.target)) {
       links.classList.remove('open');
     }
   });
+}
+
+// 🆕 ISI MENU DROPDOWN KATEGORI
+function initCategoryMenu() {
+  const menu = document.getElementById('categoryMenu');
+  if (!menu) return;
+  const cats = getUniqueCategories();
+  
+  let html = `<a href="?sort=${currentSort}" ${!currentCategory ? 'style="font-weight:bold;color:var(--text)"' : ''}>Semua Kategori</a>`;
+  cats.forEach(cat => {
+    const isActive = currentCategory === cat;
+    html += `<a href="?sort=${currentSort}&cat=${encodeURIComponent(cat)}" ${isActive ? 'style="font-weight:bold;color:var(--text)"' : ''}>${cat}</a>`;
+  });
+  menu.innerHTML = html;
 }
 
 // ==========================================
@@ -202,7 +204,6 @@ function handleVideoClick(event, videoId) {
     window.location.href = `?page=watch&id=${videoId}`;
   }
 }
-
 function handlePlayClick(videoId) {
   const hasPaidPlayAd = sessionStorage.getItem(`paid_play_ad_${videoId}`);
   if (!hasPaidPlayAd) {
@@ -215,7 +216,6 @@ function handlePlayClick(videoId) {
     document.getElementById('videoOverlay').style.display = 'none';
   }
 }
-
 function handleRelatedVideoClick(event, videoId) {
   event.preventDefault();
   let clickCount = parseInt(sessionStorage.getItem('relatedAdClicks') || '0');
@@ -223,18 +223,15 @@ function handleRelatedVideoClick(event, videoId) {
     clickCount++;
     sessionStorage.setItem('relatedAdClicks', clickCount);
     window.open(AD_LINK, '_blank');
-    if (clickCount === 1) {
-      alert("Terima kasih! Silakan klik video terkait sekali lagi.");
-    } else {
-      alert("Satu langkah lagi! Silakan klik video terkait untuk langsung menonton.");
-    }
+    if (clickCount === 1) alert("Terima kasih! Silakan klik video terkait sekali lagi.");
+    else alert("Satu langkah lagi! Silakan klik video terkait untuk langsung menonton.");
   } else {
     window.location.href = `?page=watch&id=${videoId}`;
   }
 }
 
 // ==========================================
-// GET PROCESSED VIDEOS
+// GET PROCESSED VIDEOS (DENGAN FILTER KATEGORI)
 // ==========================================
 function getProcessedVideos() {
   let result = [...videos];
@@ -244,14 +241,18 @@ function getProcessedVideos() {
     result = result.filter(v => v.title.toLowerCase().includes(q));
   }
   
+  // 🆕 Filter Kategori
+  if (currentCategory) {
+    result = result.filter(v => v.category === currentCategory);
+  }
+  
   switch (currentSort) {
     case 'latest': result = result.reverse(); break;
     case 'views': result.sort((a, b) => b.views - a.views); break;
     case 'likes': result.sort((a, b) => getDisplayLikes(b) - getDisplayLikes(a)); break;
     case 'duration': result.sort((a, b) => parseDurationToSeconds(b.duration) - parseDurationToSeconds(a.duration)); break;
     case 'random': result.sort(() => Math.random() - 0.5); break;
-    case 'trending':
-    default: break;
+    case 'trending': default: break;
   }
   return result;
 }
@@ -266,31 +267,35 @@ function renderHome(page = 1) {
   const currentVideos = processedVideos.slice(startIndex, startIndex + ITEMS_PER_PAGE);
 
   if (processedVideos.length === 0) {
-    if (currentSearch) {
-      appContainer.innerHTML = `
-        <div class="empty-state">
-          <p>Tidak ada video yang cocok dengan pencarian "<strong>${currentSearch}</strong>".</p>
-          <p><a href="?sort=${currentSort}" style="color:var(--accent);text-decoration:underline">← Kembali ke semua video</a></p>
-        </div>`;
-    } else {
-      appContainer.innerHTML = `<div class="empty-state">Belum ada video yang diunggah.</div>`;
-    }
+    let msg = `<p>Tidak ada video yang cocok dengan filter.</p>`;
+    if (currentSearch) msg = `<p>Tidak ada video yang cocok dengan pencarian "<strong>${currentSearch}</strong>".</p>`;
+    if (currentCategory) msg = `<p>Tidak ada video di kategori "<strong>${currentCategory}</strong>".</p>`;
+    
+    appContainer.innerHTML = `
+      <div class="empty-state">
+        ${msg}
+        <p><a href="?sort=${currentSort}" style="color:var(--accent);text-decoration:underline">← Kembali ke semua video</a></p>
+      </div>`;
     return;
   }
 
   let gridHTML = '';
   
-  if (currentSearch) {
+  // Header info (jika ada pencarian atau kategori aktif)
+  if (currentSearch || currentCategory) {
+    let title = '';
+    if (currentSearch) title += `Hasil untuk "<strong>${currentSearch}</strong>" `;
+    if (currentCategory) title += `di Kategori "<strong>${currentCategory}</strong>" `;
+    
     gridHTML += `
       <div class="section-heading" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
-        <span>Hasil untuk "<strong>${currentSearch}</strong>" — ${processedVideos.length} video</span>
-        <a href="?sort=${currentSort}" style="font-size:13px;color:var(--muted);text-decoration:underline">✕ Hapus Pencarian</a>
+        <span>${title} — ${processedVideos.length} video</span>
+        <a href="?sort=${currentSort}" style="font-size:13px;color:var(--muted);text-decoration:underline">✕ Reset Filter</a>
       </div>`;
   }
   
   gridHTML += `<div class="video-grid">`;
   currentVideos.forEach(video => {
-    // 🆕 Cek status like video ini
     const liked = isLiked(video.id);
     gridHTML += `
       <article class="video-card">
@@ -327,7 +332,7 @@ function renderHome(page = 1) {
 }
 
 // ==========================================
-// RENDER HALAMAN TONTON
+// RENDER HALAMAN TONTON (DENGAN DESKRIPSI & REKOMENDASI PINTAR)
 // ==========================================
 function renderWatchPage(videoId) {
   const video = videos.find(v => v.id === videoId);
@@ -336,7 +341,18 @@ function renderWatchPage(videoId) {
     return;
   }
 
-  const liked = isLiked(video.id); // 🆕
+  const liked = isLiked(video.id);
+
+  // 🆕 LOGIKA REKOMENDASI PINTAR (Kategori sama didahulukan)
+  let related = videos.filter(v => v.id !== videoId);
+  if (video.category) {
+    related.sort((a, b) => {
+      const aSame = a.category === video.category ? 1 : 0;
+      const bSame = b.category === video.category ? 1 : 0;
+      return bSame - aSame; // Yang sama kategori naik ke atas
+    });
+  }
+  related = related.slice(0, 6);
 
   appContainer.innerHTML = `
     <div class="page-shell">
@@ -351,6 +367,13 @@ function renderWatchPage(videoId) {
             </div>
           </div>
           <h1 class="detail-title">${video.title}</h1>
+          
+          <!-- 🆕 Badge Kategori & Deskripsi -->
+          <div>
+            ${video.category ? `<span class="badge">📁 ${video.category}</span>` : ''}
+          </div>
+          <p class="video-desc">${video.description || 'Tidak ada deskripsi.'}</p>
+
           <div class="stat-line">${formatNumber(video.views)} tayangan • ${formatNumber(getDisplayLikes(video))} suka</div>
           <div class="detail-actions">
             <button class="primary-btn ${liked ? 'liked' : ''}" id="likeBtn" onclick="handleWatchLike('${video.id}')">${liked ? '❤️ Disukai' : '♡ Suka'}</button>
@@ -359,7 +382,7 @@ function renderWatchPage(videoId) {
         </div>
         <div class="related-grid">
           <h3 class="section-heading" style="margin-top:0">Video Terkait</h3>
-          ${videos.filter(v => v.id !== videoId).slice(0, 6).map(rel => `
+          ${related.map(rel => `
             <a href="?page=watch&id=${rel.id}" class="related-item" onclick="handleRelatedVideoClick(event, '${rel.id}')">
               <img src="${rel.thumbnail}" alt="${rel.title}" onerror="this.src='https://via.placeholder.com/115x65?text=No+Img'">
               <div>
@@ -383,20 +406,21 @@ function initApp() {
   const idParam = urlParams.get('id');
   const sortParam = urlParams.get('sort');
   const qParam = urlParams.get('q');
+  const catParam = urlParams.get('cat'); // 🆕
 
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
   if (sortParam) currentSort = sortParam;
   if (qParam) currentSearch = qParam;
+  if (catParam) currentCategory = catParam; // 🆕
 
-  // 🆕 Inisialisasi Tema & Hamburger Menu
   initTheme();
   initMobileMenu();
+  initCategoryMenu(); // 🆕
 
   const searchForm = document.getElementById('searchForm');
   const searchInput = document.getElementById('searchInput');
-  
   if (searchInput) searchInput.value = currentSearch;
   
   if (searchForm) {
@@ -406,6 +430,7 @@ function initApp() {
       const params = new URLSearchParams();
       params.set('sort', currentSort);
       if (q) params.set('q', q);
+      if (currentCategory) params.set('cat', currentCategory);
       window.location.href = `?${params.toString()}`;
     });
   }
@@ -417,6 +442,7 @@ function initApp() {
       const params = new URLSearchParams();
       params.set('sort', this.dataset.sort);
       if (currentSearch) params.set('q', currentSearch);
+      if (currentCategory) params.set('cat', currentCategory);
       window.location.href = `?${params.toString()}`;
     });
   });

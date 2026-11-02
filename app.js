@@ -8,6 +8,13 @@ const AD_LINK_2 = "https://uplcm.com/4/12175415"; // 🆕 Ganti dengan link ikla
 // DATA VIDEO
 // ==========================================
 const videos = [
+      {
+    id: "vid-7", title: "dapat bocil spek albino mulus banget",
+    thumbnail: "https://ik.imagekit.io/lojojcfmt/IMG_20261102_160832.jpg?updatedAt=1793606976999", 
+    duration: "6:19", views: 2537, likes: 927,
+    category: "Lokal", description: "bocil spek albino emang ga ada obat bikin sange bangettt.",
+    embedUrl: "https://streamtape.com/e/RLMVggZM1OUd86X"
+  },
     {
     id: "vid-6", title: "tocil cantik masih polos keenakan bgett",
     thumbnail: "https://ik.imagekit.io/lojojcfmt/20261102_213330.jpg?updatedAt=1793626515205", 

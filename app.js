@@ -4,12 +4,11 @@
 const AD_LINK = "https://uplcm.com/4/12170890";
 
 // ==========================================
-// DATA VIDEO (GANTI DENGAN KONTEN ASLI ANDA)
+// DATA VIDEO (KONTEN ASLI ANDA)
 // ==========================================
 const videos = [
-  
   {
-    id: "vid-5", // Harus unik, tidak boleh sama
+    id: "vid-5",
     title: "ajak pacar ke rumah sambil kuda kudaan",
     thumbnail: "https://ik.imagekit.io/lojojcfmt/Screenshot_2026-08-10-20-41-22-423_com.miui.gallery.jpg?updatedAt=1786365807872", 
     duration: "10:15",
@@ -18,7 +17,7 @@ const videos = [
     embedUrl: "https://tv1.indoav.app/e/Bwrj4aD0re4i"
   },
   {
-    id: "vid-4", // Harus unik, tidak boleh sama
+    id: "vid-4",
     title: "ajak pacar ke rumah sambil kuda kudaan",
     thumbnail: "https://ik.imagekit.io/lojojcfmt/Screenshot_2026-08-10-20-41-22-423_com.miui.gallery.jpg?updatedAt=1786365807872", 
     duration: "10:15",
@@ -27,7 +26,7 @@ const videos = [
     embedUrl: "https://tv1.indoav.app/e/Bwrj4aD0re4i"
   },
   {
-    id: "vid-3", // Harus unik, tidak boleh sama
+    id: "vid-3",
     title: "ajak pacar ke rumah sambil kuda kudaan",
     thumbnail: "https://ik.imagekit.io/lojojcfmt/Screenshot_2026-08-10-20-41-22-423_com.miui.gallery.jpg?updatedAt=1786365807872", 
     duration: "10:15",
@@ -36,7 +35,7 @@ const videos = [
     embedUrl: "https://tv1.indoav.app/e/Bwrj4aD0re4i"
   },
   {
-    id: "vid-2", // Harus unik, tidak boleh sama
+    id: "vid-2",
     title: "ajak pacar ke rumah sambil kuda kudaan",
     thumbnail: "https://ik.imagekit.io/lojojcfmt/Screenshot_2026-08-10-20-41-22-423_com.miui.gallery.jpg?updatedAt=1786365807872", 
     duration: "10:15",
@@ -54,25 +53,58 @@ const videos = [
     embedUrl: "https://tv1.indoav.app/e/bqDoEXoFUgSx"
   },
   // --- TAMBAHKAN VIDEO BARU DI BAWAH INI ---
-  // {
-  //   id: "vid-3",
-  //   title: "Judul Video Ketiga",
-  //   thumbnail: "https://link-gambar.jpg",
-  //   duration: "15:00",
-  //   views: 0,
-  //   likes: 0,
-  //   embedUrl: "https://tv1.indoav.app/e/LinkEmbedVideo3"
-  // },
 ];
 
-const ITEMS_PER_PAGE = 12; // Jumlah video per halaman
+const ITEMS_PER_PAGE = 12;
 const appContainer = document.getElementById('app');
+
+// ==========================================
+// STATE (Status Aplikasi untuk Search & Sort)
+// ==========================================
+let currentSearch = '';
+let currentSort = 'trending';
 
 // ==========================================
 // FUNGSI BANTUAN
 // ==========================================
 function formatNumber(num) {
   return new Intl.NumberFormat('id-ID').format(num);
+}
+
+function parseDurationToSeconds(duration) {
+  const parts = duration.split(':').map(Number);
+  return parts.length === 2 ? parts[0] * 60 + parts[1] : (parts[0] || 0) * 60;
+}
+
+function getProcessedVideos() {
+  let result = [...videos];
+  
+  if (currentSearch && currentSearch.trim()) {
+    const q = currentSearch.toLowerCase().trim();
+    result = result.filter(v => v.title.toLowerCase().includes(q));
+  }
+  
+  switch (currentSort) {
+    case 'latest':
+      result = result.reverse();
+      break;
+    case 'views':
+      result.sort((a, b) => b.views - a.views);
+      break;
+    case 'likes':
+      result.sort((a, b) => b.likes - a.likes);
+      break;
+    case 'duration':
+      result.sort((a, b) => parseDurationToSeconds(b.duration) - parseDurationToSeconds(a.duration));
+      break;
+    case 'random':
+      result.sort(() => Math.random() - 0.5);
+      break;
+    case 'trending':
+    default:
+      break;
+  }
+  return result;
 }
 
 // ==========================================
@@ -124,16 +156,35 @@ function handleRelatedVideoClick(event, videoId) {
 // RENDER HALAMAN UTAMA
 // ==========================================
 function renderHome(page = 1) {
-  const totalPages = Math.ceil(videos.length / ITEMS_PER_PAGE);
+  const processedVideos = getProcessedVideos();
+  const totalPages = Math.ceil(processedVideos.length / ITEMS_PER_PAGE);
   const startIndex = (page - 1) * ITEMS_PER_PAGE;
-  const currentVideos = videos.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+  const currentVideos = processedVideos.slice(startIndex, startIndex + ITEMS_PER_PAGE);
 
-  if (videos.length === 0) {
-    appContainer.innerHTML = `<div class="empty-state">Belum ada video yang diunggah.</div>`;
+  if (processedVideos.length === 0) {
+    if (currentSearch) {
+      appContainer.innerHTML = `
+        <div class="empty-state">
+          <p>Tidak ada video yang cocok dengan pencarian "<strong>${currentSearch}</strong>".</p>
+          <p><a href="?sort=${currentSort}" style="color:var(--accent);text-decoration:underline">← Kembali ke semua video</a></p>
+        </div>`;
+    } else {
+      appContainer.innerHTML = `<div class="empty-state">Belum ada video yang diunggah.</div>`;
+    }
     return;
   }
 
-  let gridHTML = `<div class="video-grid">`;
+  let gridHTML = '';
+  
+  if (currentSearch) {
+    gridHTML += `
+      <div class="section-heading" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
+        <span>Hasil untuk "<strong>${currentSearch}</strong>" — ${processedVideos.length} video</span>
+        <a href="?sort=${currentSort}" style="font-size:13px;color:var(--muted);text-decoration:underline">✕ Hapus Pencarian</a>
+      </div>`;
+  }
+  
+  gridHTML += `<div class="video-grid">`;
   currentVideos.forEach(video => {
     gridHTML += `
       <article class="video-card">
@@ -155,13 +206,16 @@ function renderHome(page = 1) {
   });
   gridHTML += `</div>`;
 
-  let paginationHTML = `<div class="pagination">`;
-  paginationHTML += `<button class="page-btn" ${page === 1 ? 'disabled' : ''} onclick="changePage(${page - 1})">«</button>`;
-  for (let i = 1; i <= totalPages; i++) {
-    paginationHTML += `<button class="page-btn ${i === page ? 'active' : ''}" onclick="changePage(${i})">${i}</button>`;
+  let paginationHTML = '';
+  if (totalPages > 1) {
+    paginationHTML = `<div class="pagination">`;
+    paginationHTML += `<button class="page-btn" ${page === 1 ? 'disabled' : ''} onclick="changePage(${page - 1})">«</button>`;
+    for (let i = 1; i <= totalPages; i++) {
+      paginationHTML += `<button class="page-btn ${i === page ? 'active' : ''}" onclick="changePage(${i})">${i}</button>`;
+    }
+    paginationHTML += `<button class="page-btn" ${page === totalPages ? 'disabled' : ''} onclick="changePage(${page + 1})">»</button>`;
+    paginationHTML += `</div>`;
   }
-  paginationHTML += `<button class="page-btn" ${page === totalPages ? 'disabled' : ''} onclick="changePage(${page + 1})">»</button>`;
-  paginationHTML += `</div>`;
 
   appContainer.innerHTML = gridHTML + paginationHTML;
 }
@@ -213,16 +267,69 @@ function renderWatchPage(videoId) {
 }
 
 // ==========================================
-// ROUTER
+// ROUTER & INISIALISASI
 // ==========================================
 function initApp() {
   const urlParams = new URLSearchParams(window.location.search);
   const pageParam = urlParams.get('page');
   const idParam = urlParams.get('id');
+  const sortParam = urlParams.get('sort');
+  const qParam = urlParams.get('q');
 
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  if (sortParam) currentSort = sortParam;
+  if (qParam) currentSearch = qParam;
+
+  // --- Setup Form Pencarian ---
+  const searchForm = document.getElementById('searchForm');
+  const searchInput = document.getElementById('searchInput');
+  
+  if (searchInput) {
+    searchInput.value = currentSearch;
+  }
+  
+  if (searchForm) {
+    searchForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const q = searchInput.value.trim();
+      const params = new URLSearchParams();
+      params.set('sort', currentSort);
+      if (q) params.set('q', q);
+      window.location.href = `?${params.toString()}`;
+    });
+  }
+
+  // --- Setup Tombol Sortir Subnav ---
+  document.querySelectorAll('.subnav a[data-sort]').forEach(link => {
+    if (link.dataset.sort === currentSort) {
+      link.classList.add('active');
+    }
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const sort = this.dataset.sort;
+      const params = new URLSearchParams();
+      params.set('sort', sort);
+      if (currentSearch) params.set('q', currentSearch);
+      window.location.href = `?${params.toString()}`;
+    });
+  });
+
+  // --- Setup Tombol Random ---
+  const randomLink = document.getElementById('randomLink');
+  if (randomLink) {
+    randomLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      currentSort = 'random';
+      document.querySelectorAll('.subnav a').forEach(a => a.classList.remove('active'));
+      randomLink.classList.add('active');
+      renderHome(1);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // --- Routing Halaman ---
   if (pageParam === 'watch' && idParam) {
     renderWatchPage(idParam);
     const subnav = document.getElementById('subnav');

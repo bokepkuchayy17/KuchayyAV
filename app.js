@@ -18,7 +18,7 @@ const generateDummyData = () => {
       views: Math.floor(Math.random() * 100000) + 1000,
       likes: Math.floor(Math.random() * 5000) + 100,
       // Ganti URL di bawah ini dengan link embed video asli Anda nanti
-      embedUrl: `https://www.youtube.com/embed/dQw4w9WgXcQ` 
+      embedUrl: `https://tv1.indoav.app/e/Bwrj4aD0re4i` 
     });
   }
   return data;
@@ -75,7 +75,7 @@ function renderHome(page = 1, sort = 'trending') {
   currentVideos.forEach(video => {
     gridHTML += `
       <article class="video-card">
-        <a href="?page=watch&id=${video.id}" class="thumb-link" onclick="handleVideoClick(event, '${video.id}')">
+        <a href="?page=watch&id=${https://tv1.indoav.app/e/Bwrj4aD0re4i}" class="thumb-link" onclick="handleVideoClick(event, '${video.id}')">
           <img src="${video.thumbnail}" alt="${video.title}" loading="lazy">
           <span class="duration-pill">${video.duration}</span>
         </a>
@@ -130,8 +130,8 @@ function renderWatchPage(videoId) {
     <div class="page-shell">
       <div class="detail-layout">
         <div>
-          <iframe class="player" src="${video.embedUrl}" title="${video.title}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <h1 class="detail-title">${video.title}</h1>
+          <iframe class="player" src="${https://tv1.indoav.app/e/Bwrj4aD0re4i}" title="${dipaksa tapi mau}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h1 class="detail-title">${dipaksa tapi mau}</h1>
           <div class="stat-line">
             ${formatNumber(video.views)} tayangan • ${formatNumber(video.likes)} suka
           </div>

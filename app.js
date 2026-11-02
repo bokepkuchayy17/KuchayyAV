@@ -19,10 +19,10 @@ const videos = [
   {
     id: "vid-4",
     title: "bocil hyper keenakan sama pacar",
-    thumbnail: "https://ik.imagekit.io/lojojcfmt/Screenshot_2026-08-10-20-41-22-423_com.miui.gallery.jpg?updatedAt=1786365807872", 
-    duration: "10:15",
-    views: 1500,
-    likes: 120,
+    thumbnail: "https://ik.imagekit.io/lojojcfmt/IMG_20261102_160717.jpg?updatedAt=1793606976913", 
+    duration: "12:39",
+    views: 2387,
+    likes: 967,
     embedUrl: "https://streamtape.com/e/Y7x2ymkpMQhv7XG/lv_0_20261102033338.mp4"
   },
   {

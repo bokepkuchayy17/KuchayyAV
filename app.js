@@ -9,12 +9,12 @@ const AD_LINK = "https://uplcm.com/4/12170890";
 const videos = [
   {
     id: "vid-5",
-    title: "ajak pacar ke rumah sambil kuda kudaan",
+    title: "hoki banget cowonya dapat yang mulus gini aw",
     thumbnail: "https://ik.imagekit.io/lojojcfmt/Screenshot_2026-08-10-20-41-22-423_com.miui.gallery.jpg?updatedAt=1786365807872", 
     duration: "10:15",
     views: 1500,
     likes: 120,
-    embedUrl: "https://tv1.indoav.app/e/Bwrj4aD0re4i"
+    embedUrl: "https://streamtape.com/e/MZVJj6Vpq9FmkBv/lv_0_20261102032447.mp4"
   },
   {
     id: "vid-4",

@@ -4,26 +4,40 @@
 const AD_LINK = "https://uplcm.com/4/12170890";
 
 // ==========================================
-// DATA DUMMY
+// DATA VIDEO (GANTI DENGAN KONTEN ASLI ANDA)
 // ==========================================
-const generateDummyData = () => {
-  const data = [];
-  for (let i = 1; i <= 60; i++) {
-    data.push({
-      id: `vid-${i}`,
-      title: `Video Kuchayy AV #${i} - Konten Menarik Untuk Ditonton`,
-      thumbnail: `https://picsum.photos/seed/${i + 10}/400/225`,
-      duration: `0${Math.floor(Math.random() * 9) + 1}:${Math.floor(Math.random() * 50) + 10}`,
-      views: Math.floor(Math.random() * 100000) + 1000,
-      likes: Math.floor(Math.random() * 5000) + 100,
-      embedUrl: `https://tv1.indoav.app/e/Bwrj4aD0re4i`
-    });
-  }
-  return data;
-};
+const videos = [
+  {
+    id: "vid-1", // Harus unik, tidak boleh sama
+    title: "Judul Video Pertama Anda yang Sangat Menarik",
+    thumbnail: "https://link-gambar-thumbnail-anda.jpg", 
+    duration: "10:15",
+    views: 1500,
+    likes: 120,
+    embedUrl: "https://tv1.indoav.app/e/LinkEmbedVideo1"
+  },
+  {
+    id: "vid-2",
+    title: "Judul Video Kedua - Konten Spesial",
+    thumbnail: "https://link-gambar-thumbnail-kedua.jpg",
+    duration: "05:30",
+    views: 3400,
+    likes: 450,
+    embedUrl: "https://tv1.indoav.app/e/LinkEmbedVideo2"
+  },
+  // --- TAMBAHKAN VIDEO BARU DI BAWAH INI ---
+  // {
+  //   id: "vid-3",
+  //   title: "Judul Video Ketiga",
+  //   thumbnail: "https://link-gambar.jpg",
+  //   duration: "15:00",
+  //   views: 0,
+  //   likes: 0,
+  //   embedUrl: "https://tv1.indoav.app/e/LinkEmbedVideo3"
+  // },
+];
 
-const dummyVideos = generateDummyData();
-const ITEMS_PER_PAGE = 12;
+const ITEMS_PER_PAGE = 12; // Jumlah video per halaman
 const appContainer = document.getElementById('app');
 
 // ==========================================
@@ -82,16 +96,21 @@ function handleRelatedVideoClick(event, videoId) {
 // RENDER HALAMAN UTAMA
 // ==========================================
 function renderHome(page = 1) {
-  const totalPages = Math.ceil(dummyVideos.length / ITEMS_PER_PAGE);
+  const totalPages = Math.ceil(videos.length / ITEMS_PER_PAGE);
   const startIndex = (page - 1) * ITEMS_PER_PAGE;
-  const currentVideos = dummyVideos.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+  const currentVideos = videos.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+
+  if (videos.length === 0) {
+    appContainer.innerHTML = `<div class="empty-state">Belum ada video yang diunggah.</div>`;
+    return;
+  }
 
   let gridHTML = `<div class="video-grid">`;
   currentVideos.forEach(video => {
     gridHTML += `
       <article class="video-card">
         <a href="?page=watch&id=${video.id}" class="thumb-link" onclick="handleVideoClick(event, '${video.id}')">
-          <img src="${video.thumbnail}" alt="${video.title}" loading="lazy">
+          <img src="${video.thumbnail}" alt="${video.title}" loading="lazy" onerror="this.src='https://via.placeholder.com/400x225?text=No+Thumbnail'">
           <span class="duration-pill">${video.duration}</span>
         </a>
         <div class="card-body">
@@ -123,7 +142,7 @@ function renderHome(page = 1) {
 // RENDER HALAMAN TONTON
 // ==========================================
 function renderWatchPage(videoId) {
-  const video = dummyVideos.find(v => v.id === videoId);
+  const video = videos.find(v => v.id === videoId);
   if (!video) {
     appContainer.innerHTML = `<div class="empty-state">Video tidak ditemukan.</div>`;
     return;
@@ -150,9 +169,9 @@ function renderWatchPage(videoId) {
         </div>
         <div class="related-grid">
           <h3 class="section-heading" style="margin-top:0">Video Terkait</h3>
-          ${dummyVideos.filter(v => v.id !== videoId).slice(0, 6).map(rel => `
+          ${videos.filter(v => v.id !== videoId).slice(0, 6).map(rel => `
             <a href="?page=watch&id=${rel.id}" class="related-item" onclick="handleRelatedVideoClick(event, '${rel.id}')">
-              <img src="${rel.thumbnail}" alt="${rel.title}">
+              <img src="${rel.thumbnail}" alt="${rel.title}" onerror="this.src='https://via.placeholder.com/115x65?text=No+Img'">
               <div>
                 <div style="font-size:13px; font-weight:500; line-height:1.3; margin-bottom:4px">${rel.title}</div>
                 <div style="font-size:11px; color:var(--muted)">${formatNumber(rel.views)} tayangan</div>

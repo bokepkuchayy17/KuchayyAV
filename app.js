@@ -28,10 +28,10 @@ const videos = [
   {
     id: "vid-3",
     title: "dapat abg mekinya mulus banget",
-    thumbnail: "https://ik.imagekit.io/lojojcfmt/Screenshot_2026-08-10-20-41-22-423_com.miui.gallery.jpg?updatedAt=1786365807872", 
-    duration: "10:15",
-    views: 1500,
-    likes: 120,
+    thumbnail: "https://ik.imagekit.io/lojojcfmt/IMG_20261102_160523.jpg?updatedAt=1793606977314", 
+    duration: "3:42",
+    views: 678,
+    likes: 63,
     embedUrl: "https://streamtape.com/e/VBXpYme7KKSKeLy/lv_0_20261102033421.mp4"
   },
   {

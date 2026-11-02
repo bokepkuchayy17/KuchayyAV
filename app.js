@@ -27,12 +27,12 @@ const videos = [
   },
   {
     id: "vid-3",
-    title: "ajak pacar ke rumah sambil kuda kudaan",
+    title: "dapat abg mekinya mulus banget",
     thumbnail: "https://ik.imagekit.io/lojojcfmt/Screenshot_2026-08-10-20-41-22-423_com.miui.gallery.jpg?updatedAt=1786365807872", 
     duration: "10:15",
     views: 1500,
     likes: 120,
-    embedUrl: "https://tv1.indoav.app/e/Bwrj4aD0re4i"
+    embedUrl: "https://streamtape.com/e/VBXpYme7KKSKeLy/lv_0_20261102033421.mp4"
   },
   {
     id: "vid-2",

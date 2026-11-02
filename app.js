@@ -14,7 +14,7 @@ const videos = [
     duration: "14:50",
     views: 8739,
     likes: 657,
-    embedUrl: "https://streamtape.com/e/MZVJj6Vpq9FmkBv/lv_0_20261102032447.mp4"
+    embedUrl: "https://streamtape.com/e/MZVJj6Vpq9FmkBv"
   },
   {
     id: "vid-4",
@@ -23,7 +23,7 @@ const videos = [
     duration: "12:39",
     views: 2387,
     likes: 967,
-    embedUrl: "https://streamtape.com/e/Y7x2ymkpMQhv7XG/lv_0_20261102033338.mp4"
+    embedUrl: "https://streamtape.com/e/Y7x2ymkpMQhv7XG"
   },
   {
     id: "vid-3",
@@ -32,7 +32,7 @@ const videos = [
     duration: "3:42",
     views: 678,
     likes: 63,
-    embedUrl: "https://streamtape.com/e/VBXpYme7KKSKeLy/lv_0_20261102033421.mp4"
+    embedUrl: "https://streamtape.com/e/VBXpYme7KKSKeLy"
   },
   {
     id: "vid-2",
@@ -59,7 +59,7 @@ const ITEMS_PER_PAGE = 12;
 const appContainer = document.getElementById('app');
 
 // ==========================================
-// STATE (Status Aplikasi untuk Search & Sort)
+// STATE
 // ==========================================
 let currentSearch = '';
 let currentSort = 'trending';
@@ -76,35 +76,116 @@ function parseDurationToSeconds(duration) {
   return parts.length === 2 ? parts[0] * 60 + parts[1] : (parts[0] || 0) * 60;
 }
 
-function getProcessedVideos() {
-  let result = [...videos];
+// 🆕 SISTEM LIKE
+function getLikedVideos() {
+  try {
+    return JSON.parse(localStorage.getItem('likedVideos') || '[]');
+  } catch (e) { return []; }
+}
+
+function isLiked(videoId) {
+  return getLikedVideos().includes(videoId);
+}
+
+function getDisplayLikes(video) {
+  return video.likes + (isLiked(video.id) ? 1 : 0);
+}
+
+function toggleLike(videoId) {
+  const liked = getLikedVideos();
+  const idx = liked.indexOf(videoId);
+  if (idx > -1) liked.splice(idx, 1);
+  else liked.push(videoId);
+  localStorage.setItem('likedVideos', JSON.stringify(liked));
+  return idx === -1; // true = baru saja like
+}
+
+function handleLikeClick(event, videoId) {
+  event.preventDefault();
+  event.stopPropagation();
+  const nowLiked = toggleLike(videoId);
+  const video = videos.find(v => v.id === videoId);
+  const btn = event.currentTarget;
+  btn.classList.toggle('liked', nowLiked);
+  btn.innerHTML = `${nowLiked ? '❤️' : '♡'} ${formatNumber(getDisplayLikes(video))}`;
+}
+
+function handleWatchLike(videoId) {
+  const nowLiked = toggleLike(videoId);
+  const btn = document.getElementById('likeBtn');
+  const video = videos.find(v => v.id === videoId);
+  btn.classList.toggle('liked', nowLiked);
+  btn.textContent = nowLiked ? '❤️ Disukai' : '♡ Suka';
+  const statLine = document.querySelector('.stat-line');
+  if (statLine) {
+    statLine.innerHTML = `${formatNumber(video.views)} tayangan • ${formatNumber(getDisplayLikes(video))} suka`;
+  }
+}
+
+// 🆕 TOAST & SHARE
+function showToast(msg) {
+  const toast = document.getElementById('toast');
+  if (!toast) return;
+  toast.textContent = msg;
+  toast.classList.add('show');
+  setTimeout(() => toast.classList.remove('show'), 2200);
+}
+
+async function handleShare(videoId) {
+  const video = videos.find(v => v.id === videoId);
+  if (!video) return;
+  const url = `${window.location.origin}${window.location.pathname}?page=watch&id=${videoId}`;
   
-  if (currentSearch && currentSearch.trim()) {
-    const q = currentSearch.toLowerCase().trim();
-    result = result.filter(v => v.title.toLowerCase().includes(q));
+  if (navigator.share) {
+    try {
+      await navigator.share({
+        title: video.title,
+        text: `Tonton "${video.title}" di Kuchayy AV`,
+        url: url
+      });
+      return;
+    } catch (e) {
+      if (e.name === 'AbortError') return;
+    }
   }
   
-  switch (currentSort) {
-    case 'latest':
-      result = result.reverse();
-      break;
-    case 'views':
-      result.sort((a, b) => b.views - a.views);
-      break;
-    case 'likes':
-      result.sort((a, b) => b.likes - a.likes);
-      break;
-    case 'duration':
-      result.sort((a, b) => parseDurationToSeconds(b.duration) - parseDurationToSeconds(a.duration));
-      break;
-    case 'random':
-      result.sort(() => Math.random() - 0.5);
-      break;
-    case 'trending':
-    default:
-      break;
+  try {
+    await navigator.clipboard.writeText(url);
+    showToast('Link berhasil disalin!');
+  } catch (e) {
+    prompt('Salin link ini:', url);
   }
-  return result;
+}
+
+// 🆕 INIT TEMA
+function initTheme() {
+  const themeToggle = document.getElementById('themeToggle');
+  if (!themeToggle) return;
+  if (localStorage.getItem('theme') === 'light') {
+    document.body.classList.add('light');
+    themeToggle.textContent = '☀';
+  }
+  themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('light');
+    const isLight = document.body.classList.contains('light');
+    themeToggle.textContent = isLight ? '☀' : '☾';
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  });
+}
+
+// 🆕 INIT HAMBURGER MENU
+function initMobileMenu() {
+  const btn = document.getElementById('mobileMenu');
+  const links = document.getElementById('mobileLinks');
+  if (!btn || !links) return;
+  btn.addEventListener('click', () => {
+    links.classList.toggle('open');
+  });
+  document.addEventListener('click', (e) => {
+    if (links.classList.contains('open') && !links.contains(e.target) && !btn.contains(e.target)) {
+      links.classList.remove('open');
+    }
+  });
 }
 
 // ==========================================
@@ -153,6 +234,29 @@ function handleRelatedVideoClick(event, videoId) {
 }
 
 // ==========================================
+// GET PROCESSED VIDEOS
+// ==========================================
+function getProcessedVideos() {
+  let result = [...videos];
+  
+  if (currentSearch && currentSearch.trim()) {
+    const q = currentSearch.toLowerCase().trim();
+    result = result.filter(v => v.title.toLowerCase().includes(q));
+  }
+  
+  switch (currentSort) {
+    case 'latest': result = result.reverse(); break;
+    case 'views': result.sort((a, b) => b.views - a.views); break;
+    case 'likes': result.sort((a, b) => getDisplayLikes(b) - getDisplayLikes(a)); break;
+    case 'duration': result.sort((a, b) => parseDurationToSeconds(b.duration) - parseDurationToSeconds(a.duration)); break;
+    case 'random': result.sort(() => Math.random() - 0.5); break;
+    case 'trending':
+    default: break;
+  }
+  return result;
+}
+
+// ==========================================
 // RENDER HALAMAN UTAMA
 // ==========================================
 function renderHome(page = 1) {
@@ -186,6 +290,8 @@ function renderHome(page = 1) {
   
   gridHTML += `<div class="video-grid">`;
   currentVideos.forEach(video => {
+    // 🆕 Cek status like video ini
+    const liked = isLiked(video.id);
     gridHTML += `
       <article class="video-card">
         <a href="?page=watch&id=${video.id}" class="thumb-link" onclick="handleVideoClick(event, '${video.id}')">
@@ -197,7 +303,7 @@ function renderHome(page = 1) {
           <div class="card-meta">
             <div class="meta-left">
               <span>${formatNumber(video.views)} tayangan</span>
-              <button class="like-inline">♡ ${formatNumber(video.likes)}</button>
+              <button class="like-inline ${liked ? 'liked' : ''}" onclick="handleLikeClick(event, '${video.id}')">${liked ? '❤️' : '♡'} ${formatNumber(getDisplayLikes(video))}</button>
             </div>
           </div>
         </div>
@@ -230,6 +336,8 @@ function renderWatchPage(videoId) {
     return;
   }
 
+  const liked = isLiked(video.id); // 🆕
+
   appContainer.innerHTML = `
     <div class="page-shell">
       <div class="detail-layout">
@@ -243,10 +351,10 @@ function renderWatchPage(videoId) {
             </div>
           </div>
           <h1 class="detail-title">${video.title}</h1>
-          <div class="stat-line">${formatNumber(video.views)} tayangan • ${formatNumber(video.likes)} suka</div>
+          <div class="stat-line">${formatNumber(video.views)} tayangan • ${formatNumber(getDisplayLikes(video))} suka</div>
           <div class="detail-actions">
-            <button class="primary-btn">Suka</button>
-            <button class="secondary-btn">Bagikan</button>
+            <button class="primary-btn ${liked ? 'liked' : ''}" id="likeBtn" onclick="handleWatchLike('${video.id}')">${liked ? '❤️ Disukai' : '♡ Suka'}</button>
+            <button class="secondary-btn" onclick="handleShare('${video.id}')">📤 Bagikan</button>
           </div>
         </div>
         <div class="related-grid">
@@ -282,13 +390,14 @@ function initApp() {
   if (sortParam) currentSort = sortParam;
   if (qParam) currentSearch = qParam;
 
-  // --- Setup Form Pencarian ---
+  // 🆕 Inisialisasi Tema & Hamburger Menu
+  initTheme();
+  initMobileMenu();
+
   const searchForm = document.getElementById('searchForm');
   const searchInput = document.getElementById('searchInput');
   
-  if (searchInput) {
-    searchInput.value = currentSearch;
-  }
+  if (searchInput) searchInput.value = currentSearch;
   
   if (searchForm) {
     searchForm.addEventListener('submit', function(e) {
@@ -301,22 +410,17 @@ function initApp() {
     });
   }
 
-  // --- Setup Tombol Sortir Subnav ---
   document.querySelectorAll('.subnav a[data-sort]').forEach(link => {
-    if (link.dataset.sort === currentSort) {
-      link.classList.add('active');
-    }
+    if (link.dataset.sort === currentSort) link.classList.add('active');
     link.addEventListener('click', function(e) {
       e.preventDefault();
-      const sort = this.dataset.sort;
       const params = new URLSearchParams();
-      params.set('sort', sort);
+      params.set('sort', this.dataset.sort);
       if (currentSearch) params.set('q', currentSearch);
       window.location.href = `?${params.toString()}`;
     });
   });
 
-  // --- Setup Tombol Random ---
   const randomLink = document.getElementById('randomLink');
   if (randomLink) {
     randomLink.addEventListener('click', function(e) {
@@ -329,7 +433,6 @@ function initApp() {
     });
   }
 
-  // --- Routing Halaman ---
   if (pageParam === 'watch' && idParam) {
     renderWatchPage(idParam);
     const subnav = document.getElementById('subnav');

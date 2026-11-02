@@ -8,6 +8,13 @@ const AD_LINK_2 = "https://uplcm.com/4/12175415"; // 🆕 Ganti dengan link ikla
 // DATA VIDEO
 // ==========================================
 const videos = [
+    {
+    id: "vid-6", title: "tocil cantik masih polos keenakan bgett",
+    thumbnail: "https://ik.imagekit.io/lojojcfmt/20261102_213330.jpg?updatedAt=1793626515205", 
+    duration: "14:50", views: 6472, likes: 235,
+    category: "Lokal", description: "Video tocil yang sangat hyper dan bikin keenakan.",
+    embedUrl: "https://streamtape.com/e/GkGReO4qxdTo39"
+  },
   {
     id: "vid-5", title: "tocil hyper keenakan bgett",
     thumbnail: "https://ik.imagekit.io/lojojcfmt/IMG_20261102_160832.jpg?updatedAt=1793606976999", 

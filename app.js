@@ -9,8 +9,8 @@ const AD_LINK = "https://uplcm.com/4/12170890";
 const videos = [
   {
     id: "vid-1", // Harus unik, tidak boleh sama
-    title: "Judul Video Pertama Anda yang Sangat Menarik",
-    thumbnail: "https://link-gambar-thumbnail-anda.jpg", 
+    title: "ajak pacar ke rumah sambil kuda kudaan",
+    thumbnail: "https://ik.imagekit.io/lojojcfmt/Screenshot_2026-08-10-20-41-22-423_com.miui.gallery.jpg?updatedAt=1786365807872", 
     duration: "10:15",
     views: 1500,
     likes: 120,

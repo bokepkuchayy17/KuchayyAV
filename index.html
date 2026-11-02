@@ -1,33 +1,44 @@
 <!doctype html>
 <html lang="id">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#000000"><meta name="description" content="Platform streaming video legal. Temukan video terbaru, kategori, dan kreator favorit.">
-<link rel="icon" type="image/png" href="https://ik.imagekit.io/lojojcfmt/file_00000000425c8211abc08aabdcb08941.png">
-<link rel="apple-touch-icon" href="https://ik.imagekit.io/lojojcfmt/file_00000000425c8211abc08aabdcb08941.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Platform streaming video legal. Temukan video terbaru, kategori, dan kreator favorit.">
+  
+  <link rel="icon" type="image/png" href="https://ik.imagekit.io/lojojcfmt/file_00000000425c8211abc08aabdcb08941.png">
+  <link rel="apple-touch-icon" href="https://ik.imagekit.io/lojojcfmt/file_00000000425c8211abc08aabdcb08941.png">
+  
   <!-- SEO Meta Tags -->
-<meta name="keywords" content="streaming video, nonton gratis, video viral, video terbaru">
-<meta name="author" content="Kuchayy AV">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://bokepkuchayy17.github.io/bokepinbro/">
+  <meta name="keywords" content="streaming video, nonton gratis, video viral, video terbaru">
+  <meta name="author" content="Kuchayy AV">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bokepkuchayy17.github.io/bokepinbro/">
 
-<!-- Open Graph (WhatsApp, Telegram, Facebook) -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Kuchayy AV">
-<meta property="og:title" content="Kuchayy AV — Streaming Video Gratis Terbaru">
-<meta property="og:description" content="Nonton video terbaru, kualitas HD, gratis 100%. Update setiap hari!">
-<meta property="og:image" content="https://ik.imagekit.io/lojojcfmt/file_00000000425c8211abc08aabdcb08941.png">
-<meta property="og:url" content="https://bokepkuchayy17.github.io/bokepinbro/">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kuchayy AV">
+  <meta property="og:title" content="Kuchayy AV — Streaming Video Gratis Terbaru">
+  <meta property="og:description" content="Nonton video terbaru, kualitas HD, gratis 100%. Update setiap hari!">
+  <meta property="og:image" content="https://ik.imagekit.io/lojojcfmt/file_00000000425c8211abc08aabdcb08941.png">
+  <meta property="og:url" content="https://bokepkuchayy17.github.io/bokepinbro/">
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Kuchayy AV — Streaming Video Gratis Terbaru">
-<meta name="twitter:description" content="Nonton video terbaru, kualitas HD, gratis 100%. Update setiap hari!">
-<meta name="twitter:image" content="https://ik.imagekit.io/lojojcfmt/file_00000000425c8211abc08aabdcb08941.png">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kuchayy AV — Streaming Video Gratis Terbaru">
+  <meta name="twitter:description" content="Nonton video terbaru, kualitas HD, gratis 100%. Update setiap hari!">
+  <meta name="twitter:image" content="https://ik.imagekit.io/lojojcfmt/file_00000000425c8211abc08aabdcb08941.png">
+  
   <meta name="google-site-verification" content="r38mlNmGM0mR60wknCYOVDvwDlmLL74LkC-mOp3QHag" />
+  
   <title>Kuchayy AV — Video Streaming</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome (Ikon Profesional) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
   <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script defer src="app.js"></script>
@@ -36,27 +47,60 @@
   <header class="site-header">
     <div class="topbar wrap">
       <a class="brand" href="index.html" aria-label="Beranda">Kuchayy<span>AV</span></a>
-      <form id="searchForm" class="search-box"><input id="searchInput" type="search" placeholder="Cari judul video" autocomplete="off"><button type="submit">Search</button></form>
+      
+      <form id="searchForm" class="search-box">
+        <input id="searchInput" type="search" placeholder="Cari judul video" autocomplete="off">
+        <button type="submit" aria-label="Cari"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+      
       <a class="external-link desktop-only" href="?page=about"><span>Tentang</span></a>
-      <button id="themeToggle" class="icon-button" title="Ganti tema" aria-label="Ganti tema">☾</button>
-      <div class="menu-wrap"><button class="nav-dropdown" data-menu="categoryMenu"><span>Kategori</span>⌄</button><div class="dropdown" id="categoryMenu"></div></div>
-      <a class="upload-button" href="?page=upload" title="Upload video"></a>
-      <button class="hamburger" id="mobileMenu" aria-label="Buka menu">☰</button>
+      
+      <button id="themeToggle" class="icon-button" title="Ganti tema" aria-label="Ganti tema"><i class="fa-solid fa-moon"></i></button>
+      
+      <div class="menu-wrap">
+        <button class="nav-dropdown" data-menu="categoryMenu">
+          <span>Kategori</span> <i class="fa-solid fa-chevron-down" style="font-size:10px; margin-left:4px"></i>
+        </button>
+        <div class="dropdown" id="categoryMenu"></div>
+      </div>
+      
+      <a class="upload-button" href="?page=upload" title="Upload video"><i class="fa-solid fa-cloud-arrow-up"></i></a>
+      
+      <button class="hamburger" id="mobileMenu" aria-label="Buka menu"><i class="fa-solid fa-bars"></i></button>
     </div>
+    
     <nav class="subnav wrap" id="subnav">
-      <a href="?sort=trending" data-sort="trending">⌁ <span>Trending</span></a><a href="?sort=latest" data-sort="latest">▤ <span>Terbaru</span></a>
-      <a href="?sort=views" data-sort="views">◉ <span>Banyak Dilihat</span></a><a href="?sort=likes" data-sort="likes">♡ <span>Disukai</span></a>
-      <a href="?sort=comments" data-sort="comments"><span>Banyak Dikomentari</span></a><a href="?sort=duration" data-sort="duration">◷ <span>Durasi Panjang</span></a>
-      <a href="#" id="randomLink"><span>Random</span></a>
+      <a href="?sort=trending" data-sort="trending"><i class="fa-solid fa-arrow-trend-up"></i> <span>Trending</span></a>
+      <a href="?sort=latest" data-sort="latest"><i class="fa-solid fa-bolt"></i> <span>Terbaru</span></a>
+      <a href="?sort=views" data-sort="views"><i class="fa-regular fa-eye"></i> <span>Banyak Dilihat</span></a>
+      <a href="?sort=likes" data-sort="likes"><i class="fa-regular fa-heart"></i> <span>Disukai</span></a>
+      <a href="?sort=comments" data-sort="comments"><i class="fa-regular fa-comment-dots"></i> <span>Banyak Dikomentari</span></a>
+      <a href="?sort=duration" data-sort="duration"><i class="fa-solid fa-hourglass-half"></i> <span>Durasi Panjang</span></a>
+      <a href="#" id="randomLink"><i class="fa-solid fa-shuffle"></i> <span>Random</span></a>
     </nav>
-    <nav class="mobile-links wrap" id="mobileLinks"><a href="?page=login">Login</a><a href="?page=register">Daftar</a><a href="?page=profile">Profil</a><a href="?page=upload">Upload video</a></nav>
+    
+    <nav class="mobile-links wrap" id="mobileLinks">
+      <a href="?page=login"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+      <a href="?page=register"><i class="fa-solid fa-user-plus"></i> Daftar</a>
+      <a href="?page=profile"><i class="fa-regular fa-user"></i> Profil</a>
+      <a href="?page=upload"><i class="fa-solid fa-cloud-arrow-up"></i> Upload</a>
+    </nav>
   </header>
+  
   <main id="app" class="wrap"><div class="loading">Sabar ya, Video masih di proses…</div></main>
+  
   <footer id="siteFooter" class="site-footer wrap">
     <p class="footer-description"><strong>KuchayyAV</strong> adalah platform streaming untuk menemukan dan menonton video yang diunggah secara sah oleh kreator. Semua konten wajib memiliki izin distribusi dan memenuhi ketentuan platform.</p>
     <ul class="feature-list"><li>Video Bokep Baru Setiap Hari</li><li>Semua Konten Video Gratis Kualitas Terbaik</li><li>Nonton dan Streaming Video Bokep Terbaru Hari Ini</li><li>Semua Konten Video Bokep Berkualitas Pilihan</li><li>Video Bokep Premium Gratis 100%</li></ul>
-    <div class="footer-links"><div><a href="?page=terms">Syarat & Ketentuan</a><a href="?page=contact">Hubungi Kami</a><a href="?page=transparency">Laporan Transparansi</a></div><div><a href="?page=legal">Informasi Legal</a><a href="?page=partners">Mitra</a></div><div><a href="?page=report">Laporkan Konten</a><a href="?page=dmca">Hak Cipta / DMCA</a><a href="?page=privacy">Kebijakan Privasi</a></div></div>
+    <div class="footer-links">
+      <div><a href="?page=terms">Syarat & Ketentuan</a><a href="?page=contact">Hubungi Kami</a><a href="?page=transparency">Laporan Transparansi</a></div>
+      <div><a href="?page=legal">Informasi Legal</a><a href="?page=partners">Mitra</a></div>
+      <div><a href="?page=report">Laporkan Konten</a><a href="?page=dmca">Hak Cipta / DMCA</a><a href="?page=privacy">Kebijakan Privasi</a></div>
+    </div>
     <p class="copyright">© <span id="year"></span> Kuchayy AV. Hak cipta dilindungi.</p>
   </footer>
+  
   <div id="toast" role="status" aria-live="polite"></div>
-</body></html>
+  <button id="scrollTopBtn" title="Kembali ke atas"><i class="fa-solid fa-arrow-up"></i></button>
+</body>
+</html>

@@ -18,12 +18,12 @@ const videos = [
   },
   {
     id: "vid-2",
-    title: "Judul Video Kedua - Konten Spesial",
-    thumbnail: "https://link-gambar-thumbnail-kedua.jpg",
+    title: "dua lawan satu tetap gak nyerah cowonya",
+    thumbnail: "https://ik.imagekit.io/lojojcfmt/Screenshot_2026-08-10-21-12-27-451_com.miui.gallery.jpg?updatedAt=1786368049970",
     duration: "05:30",
     views: 3400,
     likes: 450,
-    embedUrl: "https://tv1.indoav.app/e/LinkEmbedVideo2"
+    embedUrl: "https://tv1.indoav.app/e/bqDoEXoFUgSx"
   },
   // --- TAMBAHKAN VIDEO BARU DI BAWAH INI ---
   // {

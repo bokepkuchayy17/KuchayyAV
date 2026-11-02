@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /?page=watch
+
+Sitemap: https://bokepkuchayy17.github.io/bokepinbro/sitemap.xml

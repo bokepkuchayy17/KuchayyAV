@@ -36,20 +36,20 @@ const videos = [
   },
   {
     id: "vid-2",
-    title: "ajak pacar ke rumah sambil kuda kudaan",
-    thumbnail: "https://ik.imagekit.io/lojojcfmt/Screenshot_2026-08-10-20-41-22-423_com.miui.gallery.jpg?updatedAt=1786365807872", 
-    duration: "10:15",
-    views: 1500,
-    likes: 120,
+    title: "abg pantat bulat dan hyper",
+    thumbnail: "https://ik.imagekit.io/lojojcfmt/aTNPUVRPbnRUZktQZkl5eU1HbmhGUndFYndZckREb1NYLzh6c2pkY0M2VjBiY1FVM0JvaytRbWxycjBOK0RlSFFLc2R2TGJER1huOVBURzFQODZmZ0E9PTo6Ex3m4zpaPp0zxyeZab3X+Q==.jpeg", 
+    duration: "05:34",
+    views: 3678,
+    likes: 121,
     embedUrl: "https://tv1.indoav.app/e/Bwrj4aD0re4i"
   },
   {
     id: "vid-1",
-    title: "dua lawan satu tetap gak nyerah cowonya",
-    thumbnail: "https://ik.imagekit.io/lojojcfmt/Screenshot_2026-08-10-21-12-27-451_com.miui.gallery.jpg?updatedAt=1786368049970",
-    duration: "05:30",
+    title: "dua chindo sedang keenakan",
+    thumbnail: "https://ik.imagekit.io/lojojcfmt/eDBPM0RnN09jTXVBemErZjlUUnFzQzFmL2V3U1doem81MGxscjVIVTAzRW5nSFZrY2tlR2kxMFdXdmpmR0p4Yzo6Ex3m4zpaPp0zxyeZab3X+Q==.jpeg?updatedAt=1793606009631",
+    duration: "20:16",
     views: 3400,
-    likes: 450,
+    likes: 897,
     embedUrl: "https://tv1.indoav.app/e/bqDoEXoFUgSx"
   },
   // --- TAMBAHKAN VIDEO BARU DI BAWAH INI ---

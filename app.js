@@ -23,9 +23,9 @@ const videos = [
     embedUrl: "https://streamtape.com/e/qJWXP1ZAb2TzgJL"
   },
   {
-    id: "vid-11", title: "Masuknya terlalu dalem",
-    thumbnail: "https://ik.imagekit.io/lojojcfmt/IMG_20261103_091906.jpg", 
-    duration: "14:50", views: 8739, likes: 657,
+    id: "vid-11", title: "bocil dapat pacar batang gede",
+    thumbnail: "https://ik.imagekit.io/lojojcfmt/IMG_20261103_091925.jpg", 
+    duration: "6:16", views: 567, likes: 241,
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
     embedUrl: "https://streamtape.com/e/OdRj964BBLIz0Q"
   },  

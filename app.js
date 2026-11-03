@@ -17,8 +17,8 @@ const videos = [
   },
   {
     id: "vid-12", title: "bocil udah jago main di atas",
-    thumbnail: "https://ik.imagekit.io/lojojcfmt/IMG_20261103_091925.jpg", 
-    duration: "14:50", views: 8739, likes: 657,
+    thumbnail: "https://ik.imagekit.io/lojojcfmt/IMG_20261103_091906.jpg", 
+    duration: "19:15", views: 1739, likes: 321,
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
     embedUrl: "https://streamtape.com/e/qJWXP1ZAb2TzgJL"
   },

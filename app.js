@@ -9,6 +9,34 @@ const AD_LINK_2 = "https://uplcm.com/4/12175415"; // 🆕 Ganti dengan link ikla
 // ==========================================
 const videos = [
   {
+    id: "vid-13", title: "tocil hyper keenakan bgett",
+    thumbnail: "https://ik.imagekit.io/lojojcfmt/IMG_20261102_160832.jpg?updatedAt=1793606976999", 
+    duration: "14:50", views: 8739, likes: 657,
+    category: "Lokal", description: "Video tocil yang sangat hyper dan bikin keenakan. Kualitas gambar jernih dan suara jernih.",
+    embedUrl: "https://streamtape.com/e/MZVJj6Vpq9FmkBv"
+  },
+  {
+    id: "vid-12", title: "tocil hyper keenakan bgett",
+    thumbnail: "https://ik.imagekit.io/lojojcfmt/IMG_20261102_160832.jpg?updatedAt=1793606976999", 
+    duration: "14:50", views: 8739, likes: 657,
+    category: "Lokal", description: "Video tocil yang sangat hyper dan bikin keenakan. Kualitas gambar jernih dan suara jernih.",
+    embedUrl: "https://streamtape.com/e/qJWXP1ZAb2TzgJL"
+  },
+  {
+    id: "vid-11", title: "tocil hyper keenakan bgett",
+    thumbnail: "https://ik.imagekit.io/lojojcfmt/IMG_20261102_160832.jpg?updatedAt=1793606976999", 
+    duration: "14:50", views: 8739, likes: 657,
+    category: "Lokal", description: "Video tocil yang sangat hyper dan bikin keenakan. Kualitas gambar jernih dan suara jernih.",
+    embedUrl: "https://streamtape.com/e/OdRj964BBLIz0Q"
+  },  
+  {
+    id: "vid-10", title: "tocil hyper keenakan bgett",
+    thumbnail: "https://ik.imagekit.io/lojojcfmt/IMG_20261102_160832.jpg?updatedAt=1793606976999", 
+    duration: "14:50", views: 8739, likes: 657,
+    category: "Lokal", description: "Video tocil yang sangat hyper dan bikin keenakan. Kualitas gambar jernih dan suara jernih.",
+    embedUrl: "https://streamtape.com/e/a4xBmmGgbJuxkVj"
+  },
+  {
     id: "vid-9", title: "Yang lagi viral habis dipake pacar dipake lagi ama temennya",
     thumbnail: "https://ik.imagekit.io/lojojcfmt/IMG_20261103_091842.jpg", 
     duration: "3:31", views: 2136, likes: 173,

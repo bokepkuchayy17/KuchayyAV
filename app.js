@@ -9,6 +9,20 @@ const AD_LINK_2 = "https://uplcm.com/4/12175415"; // 🆕 Ganti dengan link ikla
 // ==========================================
 const videos = [
   {
+    id: "vid-15", title: "Kena hajar ampe lemes",
+    thumbnail: "https://ik.imagekit.io/lojojcfmt/20261103_103716.jpg", 
+    duration: "7:18", views: 108, likes: 78,
+    category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
+    embedUrl: "https://streamtape.com/e/KXGAG4zpB3C00Gg"
+  },
+  {
+    id: "vid-14", title: "Dengerin percakapannya bikin sangne",
+    thumbnail: "https://ik.imagekit.io/lojojcfmt/20261103_103716.jpg", 
+    duration: "7:18", views: 521, likes: 132,
+    category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
+    embedUrl: "https://streamtape.com/e/KXGAG4zpB3C00Gg"
+  },
+  {
     id: "vid-13", title: "Kena hajar ampe lemes",
     thumbnail: "https://ik.imagekit.io/lojojcfmt/20261103_103716.jpg", 
     duration: "7:18", views: 952, likes: 352,

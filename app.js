@@ -5,8 +5,8 @@ const AD_LINK = "https://uplcm.com/4/12170890";
 const AD_LINK_2 = "https://uplcm.com/4/12175415"; 
 
 // 🆕 KONFIGURASI BANNER IKLAN (Ganti link di bawah ini)
-const BANNER_IMG_URL = "https://ik.imagekit.io/lojojcfmt/URL_GAMBAR_BANNER_ANDA.jpg"; // Ganti dengan link gambar dari ImageKit
-const BANNER_AD_LINK = "https://uplcm.com/4/LINK_IKLAN_BANNER_ANDA"; // Ganti dengan link tujuan iklan banner
+const BANNER_IMG_URL = "https://ik.imagekit.io/7cynulshf/ID_ID_C1_EXT_C2_T1_PROMO_RISK_T2_PERFORMANCE_D-3-3_STATIC_1200x627.jpg?updatedAt=1793724154994"; // Ganti dengan link gambar dari ImageKit
+const BANNER_AD_LINK = "https://one.toexness.com/a/2sjqpm8yx0"; // Ganti dengan link tujuan iklan banner
 
 // ==========================================
 // DATA VIDEO

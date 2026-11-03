@@ -9,11 +9,11 @@ const AD_LINK_2 = "https://uplcm.com/4/12175415"; // 🆕 Ganti dengan link ikla
 // ==========================================
 const videos = [
   {
-    id: "vid-13", title: "tocil hyper keenakan bgett",
+    id: "vid-13", title: "Kena hajar ampe lemes",
     thumbnail: "https://ik.imagekit.io/lojojcfmt/IMG_20261102_160832.jpg?updatedAt=1793606976999", 
-    duration: "14:50", views: 8739, likes: 657,
+    duration: "7:18", views: 952, likes: 352,
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
-    embedUrl: "https://streamtape.com/e/MZVJj6Vpq9FmkBv"
+    embedUrl: "https://streamtape.com/e/KXGAG4zpB3C00Gg"
   },
   {
     id: "vid-12", title: "bocil udah jago main di atas",

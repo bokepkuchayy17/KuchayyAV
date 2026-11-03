@@ -11,7 +11,7 @@ const videos = [
         {
     id: "vid-8", title: "anjay ngentodnya di billiard",
     thumbnail: "https://ik.imagekit.io/lojojcfmt/IMG_20261103_002639.jpg", 
-    duration: "14:50", views: 382, likes: 67,
+    duration: "20:11", views: 382, likes: 67,
     category: "Lokal", description: "Sempat sempatnya main billiard sambil ngenwe, klo gini mah pulang jam bepapun gw siap.",
     embedUrl: "https://streamtape.com/e/vKkQ9kgrgBI438Q"
   },

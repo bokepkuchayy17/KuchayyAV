@@ -13,6 +13,13 @@ const BANNER_AD_LINK = "https://one.toexness.com/a/2sjqpm8yx0"; // Ganti dengan 
 // ==========================================
 const videos = [
   {
+    id: "vid-16", title: "a day in my life bareng temen",
+    thumbnail: "https://ik.imagekit.io/7cynulshf/20261104_011542.jpg?updatedAt=1793726225031", 
+    duration: "1:19", views: 768, likes: 132,
+    category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
+    embedUrl: "https://streamtape.com/e/Re7pWdKzpbtL8o"
+  },
+  {
     id: "vid-15", title: "Ponakan tante sekarang sudah pinter",
     thumbnail: "https://ik.imagekit.io/lojojcfmt/20261103_103733.jpg", 
     duration: "7:18", views: 108, likes: 78,

@@ -12,7 +12,7 @@ const videos = [
     id: "vid-9", title: "Yang lagi viral habis dipake pacar dipake lagi ama temennya",
     thumbnail: "https://ik.imagekit.io/lojojcfmt/IMG_20261102_160832.jpg?updatedAt=1793606976999", 
     duration: "3:31", views: 2136, likes: 173,
-    category: "Lokal", description: "Video tocil yang sangat hyper dan bikin keenakan. Kualitas gambar jernih dan suara jernih.",
+    category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
     embedUrl: "https://streamtape.com/e/3DG8pX7Zd7FdKOx"
   },
   {

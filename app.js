@@ -8,21 +8,28 @@ const AD_LINK_2 = "https://uplcm.com/4/12175415"; // 🆕 Ganti dengan link ikla
 // DATA VIDEO
 // ==========================================
 const videos = [
-        {
+  {
+    id: "vid-9", title: "Yang lagi viral habis dipake pacar dipake lagi ama temennya",
+    thumbnail: "https://ik.imagekit.io/lojojcfmt/IMG_20261102_160832.jpg?updatedAt=1793606976999", 
+    duration: "3:31", views: 2136, likes: 173,
+    category: "Lokal", description: "Video tocil yang sangat hyper dan bikin keenakan. Kualitas gambar jernih dan suara jernih.",
+    embedUrl: "https://streamtape.com/e/3DG8pX7Zd7FdKOx"
+  },
+  {
     id: "vid-8", title: "anjay ngentodnya di billiard",
     thumbnail: "https://ik.imagekit.io/lojojcfmt/IMG_20261103_002639.jpg", 
     duration: "20:11", views: 382, likes: 67,
     category: "Lokal", description: "Sempat sempatnya main billiard sambil ngenwe, klo gini mah pulang jam bepapun gw siap.",
     embedUrl: "https://streamtape.com/e/vKkQ9kgrgBI438Q"
   },
-      {
+  {
     id: "vid-7", title: "bawa pacar ke rumah terus di sepong dulu",
     thumbnail: "https://ik.imagekit.io/lojojcfmt/IMG_20261103_002438.jpg", 
     duration: "1:20", views: 936, likes: 73,
     category: "Lokal", description: "bocil spek albino emang ga ada obat bikin sange bangettt.",
     embedUrl: "https://streamtape.com/e/BaMYBrOVWjtVXD"
   },
-    {
+  {
     id: "vid-6", title: "tocil cantik masih polos keenakan bgett",
     thumbnail: "https://ik.imagekit.io/lojojcfmt/20261102_213330.jpg?updatedAt=1793626515205", 
     duration: "3:19", views: 6472, likes: 235,

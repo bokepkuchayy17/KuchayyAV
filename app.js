@@ -17,7 +17,7 @@ const videos = [
     thumbnail: "https://ik.imagekit.io/7cynulshf/20261104_011542.jpg?updatedAt=1793726225031", 
     duration: "1:19", views: 768, likes: 132,
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
-    embedUrl: "https://streamtape.com/e/Re7pWdKzpbtL8o"
+    embedUrl: "https://morencius.com/embed/fbzn74wc1dbn"
   },
   {
     id: "vid-15", title: "Ponakan tante sekarang sudah pinter",

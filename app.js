@@ -18,14 +18,14 @@ const videos = [
     thumbnail: "https://ik.imagekit.io/7cynulshf/aak6te5ci96g_xt.jpg", 
     duration: "1:27", views: 23478, likes: 1027,
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
-    embedUrl: "https://morencius.com/embed/aak6te5ci96g"
+    embedUrl: "https://mumu.watch/e/bqatgu5k0sq"
   },
   {
     id: "vid-17", title: "bawa pacar cobain hotel jadul",
     thumbnail: "https://ik.imagekit.io/7cynulshf/1xhxd85wbwbg_xt.jpg", 
     duration: "1:55", views: 95, likes: 35,
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
-    embedUrl: "https://morencius.com/embed/1xhxd85wbwbg"
+    embedUrl: "https://mumu.watch/e/7p1emmz166y"
   },
   {
     id: "vid-16", title: "a day in my life bareng temen",

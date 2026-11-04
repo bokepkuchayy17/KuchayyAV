@@ -14,7 +14,14 @@ const BANNER_AD_LINK = "https://one.toexness.com/a/2sjqpm8yx0"; // Ganti dengan 
 const videos = [
   
   {
-    id: "vid-17", title: "bawa pacar cobain hotel jadil",
+    id: "vid-18", title: "Abg body badontod",
+    thumbnail: "https://ik.imagekit.io/7cynulshf/aak6te5ci96g_xt.jpg", 
+    duration: "1:27", views: 23478, likes: 1027,
+    category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
+    embedUrl: "https://morencius.com/embed/aak6te5ci96g"
+  },
+  {
+    id: "vid-17", title: "bawa pacar cobain hotel jadul",
     thumbnail: "https://ik.imagekit.io/7cynulshf/1xhxd85wbwbg_xt.jpg", 
     duration: "1:55", views: 95, likes: 35,
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",

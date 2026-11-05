@@ -15,7 +15,7 @@ const videos = [
   
   {
     id: "vid-19", title: "Guru bangsat bwa murid ke kamar mandi cuma mau di icip",
-    thumbnail: "https://ik.imagekit.io/lojojcfmt/20261103_103716.jpg", 
+    thumbnail: "https://ik.imagekit.io/lojojcfmt/Thumbnail%20KuchayyAV/20261106_022824.jpg", 
     duration: "1:33", views: 893, likes: 238,
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
     embedUrl: "https://imagekit.io/player/embed/lojojcfmt/Video%20KuchayyAV/_bokepindo13.motorcycles_guru-bangsat-bwa-murid-ke-kamar-mandi-cuma-mau-di-icip-bokepindo13.mp4?controls=true&autoplay=false&loop=false&background=%23000000&updatedAt=1793901876660&thumbnail=https%3A%2F%2Fik.imagekit.io%2Flojojcfmt%2FVideo%2520KuchayyAV%2F_bokepindo13.motorcycles_guru-bangsat-bwa-murid-ke-kamar-mandi-cuma-mau-di-icip-bokepindo13.mp4%2Fik-thumbnail.jpg%3FupdatedAt%3D1793901876660"

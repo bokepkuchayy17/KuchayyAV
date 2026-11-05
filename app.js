@@ -14,7 +14,7 @@ const BANNER_AD_LINK = "https://one.toexness.com/a/2sjqpm8yx0"; // Ganti dengan 
 const videos = [
   
   {
-    id: "vid-13", title: "Guru bangsat bwa murid ke kamar mandi cuma mau di icip",
+    id: "vid-19", title: "Guru bangsat bwa murid ke kamar mandi cuma mau di icip",
     thumbnail: "https://ik.imagekit.io/lojojcfmt/20261103_103716.jpg", 
     duration: "1:33", views: 893, likes: 238,
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",

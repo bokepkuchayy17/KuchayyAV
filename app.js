@@ -18,7 +18,7 @@ const videos = [
     thumbnail: "https://ik.imagekit.io/7cynulshf/aak6te5ci96g_xt.jpg", 
     duration: "1:27", views: 23478, likes: 1027,
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
-    embedUrl: ""
+    embedUrl: "https://ik.imagekit.io/lojojcfmt/Video%20KuchayyAV/_bokepindo13.motorcycles_loading-https-acclaimedbread-com-be3fv-0gp-2iljjkplx-bnzojpmq9-0sptuunvn-sxkyvzsau-kcldkewfw-5hkidjlkl-xmunmolpz-vrzsvtrus-2wlxbynzu-1bxcvdx.mp4"
   },
   {
     id: "vid-17", title: "bawa pacar cobain hotel jadul",

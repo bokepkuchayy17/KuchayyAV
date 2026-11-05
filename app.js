@@ -14,6 +14,13 @@ const BANNER_AD_LINK = "https://one.toexness.com/a/2sjqpm8yx0"; // Ganti dengan 
 const videos = [
   
   {
+    id: "vid-13", title: "Kena hajar ampe lemes",
+    thumbnail: "https://ik.imagekit.io/lojojcfmt/20261103_103716.jpg", 
+    duration: "1:33", views: 893, likes: 238,
+    category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
+    embedUrl: "https://imagekit.io/player/embed/lojojcfmt/Video%20KuchayyAV/_bokepindo13.motorcycles_guru-bangsat-bwa-murid-ke-kamar-mandi-cuma-mau-di-icip-bokepindo13.mp4?controls=true&autoplay=false&loop=false&background=%23000000&updatedAt=1793901876660&thumbnail=https%3A%2F%2Fik.imagekit.io%2Flojojcfmt%2FVideo%2520KuchayyAV%2F_bokepindo13.motorcycles_guru-bangsat-bwa-murid-ke-kamar-mandi-cuma-mau-di-icip-bokepindo13.mp4%2Fik-thumbnail.jpg%3FupdatedAt%3D1793901876660"
+  },
+  {
     id: "vid-18", title: "Abg body badontod",
     thumbnail: "https://ik.imagekit.io/7cynulshf/aak6te5ci96g_xt.jpg", 
     duration: "1:27", views: 23478, likes: 1027,

@@ -18,14 +18,14 @@ const videos = [
     thumbnail: "https://ik.imagekit.io/7cynulshf/aak6te5ci96g_xt.jpg", 
     duration: "1:27", views: 23478, likes: 1027,
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
-    embedUrl: "https://imagekit.io/player/embed/lojojcfmt/_bokepindo13.motorcycles_loading-https-acclaimedbread-com-bv3wv-0xp-2zlajbpcx-bezfjgmh9-0jpkulnmn-sokpvqsru-ktlukvwww-5ykzdalbl-xduemflgz-vizjvkrls-2nlobpnqu-1sxtvux.mp4?controls=true&autoplay=false&loop=false&background=%23000000&thumbnail=https%3A%2F%2Fik.imagekit.io%2Flojojcfmt%2F_bokepindo13.motorcycles_loading-https-acclaimedbread-com-bv3wv-0xp-2zlajbpcx-bezfjgmh9-0jpkulnmn-sokpvqsru-ktlukvwww-5ykzdalbl-xduemflgz-vizjvkrls-2nlobpnqu-1sxtvux.mp4%2Fik-thumbnail.jpg%3FupdatedAt%3D1793897395183"
+    embedUrl: ""
   },
   {
     id: "vid-17", title: "bawa pacar cobain hotel jadul",
     thumbnail: "https://ik.imagekit.io/7cynulshf/1xhxd85wbwbg_xt.jpg", 
     duration: "1:55", views: 95, likes: 35,
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
-    embedUrl: "https://imagekit.io/embed/lojojcfmt"
+    embedUrl: "https://imagekit.io/player/embed/lojojcfmt/_bokepindo13.motorcycles_loading-https-acclaimedbread-com-bv3wv-0xp-2zlajbpcx-bezfjgmh9-0jpkulnmn-sokpvqsru-ktlukvwww-5ykzdalbl-xduemflgz-vizjvkrls-2nlobpnqu-1sxtvux.mp4?controls=true&autoplay=false&loop=false&background=%23000000&thumbnail=https%3A%2F%2Fik.imagekit.io%2Flojojcfmt%2F_bokepindo13.motorcycles_loading-https-acclaimedbread-com-bv3wv-0xp-2zlajbpcx-bezfjgmh9-0jpkulnmn-sokpvqsru-ktlukvwww-5ykzdalbl-xduemflgz-vizjvkrls-2nlobpnqu-1sxtvux.mp4%2Fik-thumbnail.jpg%3FupdatedAt%3D1793897395183"
   },
   {
     id: "vid-16", title: "a day in my life bareng temen",

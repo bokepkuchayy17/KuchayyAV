@@ -25,7 +25,7 @@ const videos = [
     thumbnail: "https://ik.imagekit.io/7cynulshf/1xhxd85wbwbg_xt.jpg", 
     duration: "1:55", views: 95, likes: 35,
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
-    embedUrl: "https://imagekit.io/player/embed/lojojcfm"
+    embedUrl: "https://imagekit.io/player/embed/lojojcfmt
   },
   {
     id: "vid-16", title: "a day in my life bareng temen",

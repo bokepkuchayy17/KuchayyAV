@@ -14,6 +14,13 @@ const BANNER_AD_LINK = "https://one.toexness.com/a/2sjqpm8yx0"; // Ganti dengan 
 const videos = [
   
   {
+    id: "vid-21", title: "Abg kena rudal pacar yang gedeee",
+    thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/kfnnzz0qqh52_xt.jpg", 
+    duration: "17:22", views: 5738, likes: 123,
+    category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
+    embedUrl: "https://morencius.com/embed/kfnnzz0qqh52"
+  },
+  {
     id: "vid-20", title: "Si uhty bilang agak perih tapi enak",
     thumbnail: "https://ik.imagekit.io/lojojcfmt/Thumbnail%20KuchayyAV/20261106_023455.jpg", 
     duration: "1:22", views: 912, likes: 43,

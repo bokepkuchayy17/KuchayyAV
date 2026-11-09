@@ -22,7 +22,7 @@ const videos = [
   },
   {
     id: "vid-22", title: "Gadis SMA Di Cari Emak Taunya Ngentot",
-    thumbnail: "https://ik.imagekit.io/lojojcfmt/20261103_103716.jpg", 
+    thumbnail: "https://ik.imagekit.io/lojojcfmt/Thumbnail%20KuchayyAV/Screenshot_2026-11-10-01-38-23-350_com.miui.gallery.jpg", 
     duration: "1:24", views: 564, likes: 214,
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
     embedUrl: "https://ik.imagekit.io/lojojcfmt/Video%20KuchayyAV/_bokepindo13.motorcycles_bokep-indo-gadis-sma-di-cari-emak-taunya-ngentot-bokepindo13%20(1).mp4?updatedAt=1794244797019"

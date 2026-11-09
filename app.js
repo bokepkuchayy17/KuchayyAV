@@ -14,6 +14,13 @@ const BANNER_AD_LINK = "https://one.toexness.com/a/2sjqpm8yx0"; // Ganti dengan 
 const videos = [
   
   {
+    id: "vid-22", title: "Gadis SMA Di Cari Emak Taunya Ngentot",
+    thumbnail: "https://ik.imagekit.io/lojojcfmt/20261103_103716.jpg", 
+    duration: "1:24", views: 564, likes: 214,
+    category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
+    embedUrl: "https://ik.imagekit.io/lojojcfmt/Video%20KuchayyAV/_bokepindo13.motorcycles_bokep-indo-gadis-sma-di-cari-emak-taunya-ngentot-bokepindo13%20(1).mp4?updatedAt=1794244797019"
+  },
+  {
     id: "vid-21", title: "Abg kena rudal pacar yang gedeee",
     thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/kfnnzz0qqh52_xt.jpg", 
     duration: "17:22", views: 5738, likes: 123,

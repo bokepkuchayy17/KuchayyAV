@@ -14,6 +14,13 @@ const BANNER_AD_LINK = "https://one.toexness.com/a/2sjqpm8yx0"; // Ganti dengan 
 const videos = [
   
   {
+    id: "vid-26", title: "Berawal Dari Kokop Dan Berakhir Checkin",
+    thumbnail: "https://ik.imagekit.io/lojojcfmt/Video%20KuchayyAV/pvgtord0y1g2_xt.jpg", 
+    duration: "6:06", views: 932, likes: 69,
+    category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
+    embedUrl: "https://morencius.com/embed/pvgtord0y1g2"
+  },
+  {
     id: "vid-25", title: "Porno indo desahannya enak banget pas di ewe",
     thumbnail: "https://ik.imagekit.io/lojojcfmt/Thumbnail%20KuchayyAV/Screenshot_2026-11-10-01-40-12-954_com.miui.gallery.jpg?updatedAt=1794246235721", 
     duration: "1:42", views: 238, likes: 45,

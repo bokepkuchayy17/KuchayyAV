@@ -36,7 +36,7 @@ const videos = [
   },
   {
     id: "vid-24", title: "Hijab Pulang Ngaji Lanjut Ngenti",
-    thumbnail: "https://ik.imagekit.io/lojojcfmt/Thumbnail%20KuchayyAV/Screenshot_2026-11-10-01-38-52-431_com.miui.gallery.jpg?updatedAt=1794246236020", 
+    thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/Screenshot_2026-11-10-01-38-52-431_com.miui.gallery.jpg?updatedAt=1794672158743", 
     duration: "2:05", views: 8976, likes: 674,
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
     embedUrl: "https://ik.imagekit.io/lojojcfmt/Video%20KuchayyAV/_bokepindo13.motorcycles_hijab-pulang-ngaji-lanjut-ngenti-part-2-bokep-indo-bokepindo13.mp4?updatedAt=1794244820534"

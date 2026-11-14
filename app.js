@@ -22,7 +22,7 @@ const videos = [
   },
   {
     id: "vid-26", title: "Berawal Dari Kokop Dan Berakhir Checkin",
-    thumbnail: "https://ik.imagekit.io/lojojcfmt/Video%20KuchayyAV/pvgtord0y1g2_xt.jpg", 
+    thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/Screenshot_2026-11-10-01-39-21-250_com.miui.gallery.jpg", 
     duration: "6:06", views: 932, likes: 69,
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
     embedUrl: "https://morencius.com/embed/pvgtord0y1g2"

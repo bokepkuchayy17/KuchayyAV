@@ -43,14 +43,14 @@ const videos = [
   },
   {
     id: "vid-23", title: "Bokep Indo Ojol Di Hotel Bali",
-    thumbnail: "https://ik.imagekit.io/lojojcfmt/Thumbnail%20KuchayyAV/znfixbmhwrr3.jpg", 
+    thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/znfixbmhwrr3.jpg?updatedAt=1794672156072", 
     duration: "10:59", views: 342, likes: 124,
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
     embedUrl: "https://morencius.com/embed/znfixbmhwrr3"
   },
   {
     id: "vid-22", title: "Gadis SMA Di Cari Emak Taunya Ngentot",
-    thumbnail: "https://ik.imagekit.io/lojojcfmt/Thumbnail%20KuchayyAV/Screenshot_2026-11-10-01-38-23-350_com.miui.gallery.jpg", 
+    thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/Screenshot_2026-11-10-01-38-23-350_com.miui.gallery.jpg?updatedAt=1794672158384", 
     duration: "1:24", views: 564, likes: 214,
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
     embedUrl: "https://ik.imagekit.io/lojojcfmt/Video%20KuchayyAV/_bokepindo13.motorcycles_bokep-indo-gadis-sma-di-cari-emak-taunya-ngentot-bokepindo13%20(1).mp4?updatedAt=1794244797019"

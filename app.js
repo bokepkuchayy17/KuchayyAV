@@ -29,7 +29,7 @@ const videos = [
   },
   {
     id: "vid-25", title: "Porno indo desahannya enak banget pas di ewe",
-    thumbnail: "https://ik.imagekit.io/lojojcfmt/Thumbnail%20KuchayyAV/Screenshot_2026-11-10-01-40-12-954_com.miui.gallery.jpg?updatedAt=1794246235721", 
+    thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/Screenshot_2026-11-10-01-40-12-954_com.miui.gallery.jpg?updatedAt=1794672158522", 
     duration: "1:42", views: 238, likes: 45,
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
     embedUrl: "https://ik.imagekit.io/lojojcfmt/Video%20KuchayyAV/_bokepindo13.motorcycles_bokep-indo-desahannya-enak-banget-pas-di-ewe-bokepindo13.mp4?updatedAt=1794244795203"

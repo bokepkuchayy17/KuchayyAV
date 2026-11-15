@@ -14,6 +14,13 @@ const BANNER_AD_LINK = "https://one.toexness.com/a/2sjqpm8yx0"; // Ganti dengan 
 const videos = [
   
   {
+    id: "vid-30", title: "Yang viral dan rame karyawan 77 kena embat juragan",
+    thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/9zkor86fygng_xt.jpg?updatedAt=1794762886020", 
+    duration: "7:18", views: 952, likes: 352,
+    category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
+    embedUrl: "https://morencius.com/embed/9zkor86fygng"
+  },
+  {
     id: "vid-29", title: "Bocel pulang sekolah mampir kos dulu",
     thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/20yysttzzxd9_xt.jpg", 
     duration: "1:13", views: 2367, likes: 675,

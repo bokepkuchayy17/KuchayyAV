@@ -14,6 +14,13 @@ const BANNER_AD_LINK = "https://one.toexness.com/a/2sjqpm8yx0"; // Ganti dengan 
 const videos = [
   
   {
+    id: "vid-28", title: "Abg kena rudal balistik pacar",
+    thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/tkzqqcs38bem_xt.jpg", 
+    duration: "7:18", views: 952, likes: 352,
+    category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
+    embedUrl: "https://morencius.com/embed/tkzqqcs38bem"
+  },
+  {
     id: "vid-27", title: "pulang nyantren langsung di gas sama bokap",
     thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/ysgyh25tzb6d_xt.jpg", 
     duration: "1:05", views: 367, likes: 27,

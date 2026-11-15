@@ -14,6 +14,13 @@ const BANNER_AD_LINK = "https://one.toexness.com/a/2sjqpm8yx0"; // Ganti dengan 
 const videos = [
   
   {
+    id: "vid-29", title: "Bocel pulang sekolah mampir kos dulu",
+    thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/20yysttzzxd9_xt.jpg", 
+    duration: "7:18", views: 2367, likes: 675,
+    category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
+    embedUrl: "https://morencius.com/embed/20yysttzzxd9"
+  },
+  {
     id: "vid-28", title: "Abg kena rudal balistik pacar",
     thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/tkzqqcs38bem_xt.jpg", 
     duration: "7:18", views: 952, likes: 352,

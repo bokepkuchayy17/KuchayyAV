@@ -14,6 +14,13 @@ const BANNER_AD_LINK = "https://one.toexness.com/a/2sjqpm8yx0"; // Ganti dengan 
 const videos = [
   
   {
+    id: "vid-34", title: "Katanya Sahabatan Tapi Kok Di Masukin",
+    thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/rrwi85vv8u1c_xt.jpg?updatedAt=1794762885797", 
+    duration: "3:10", views: 1072, likes: 1298,
+    category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
+    embedUrl: "https://morencius.com/file/rrwi85vv8u1c"
+  },
+  {
     id: "vid-33", title: "Skandal Anak Kos Mahasiswi Yang Viral",
     thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/wsui9wvqelkq_xt.jpg?updatedAt=1794762886088", 
     duration: "10:08", views: 952, likes: 352,

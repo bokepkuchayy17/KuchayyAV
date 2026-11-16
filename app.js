@@ -14,6 +14,13 @@ const BANNER_AD_LINK = "https://one.toexness.com/a/2sjqpm8yx0"; // Ganti dengan 
 const videos = [
   
   {
+    id: "vid-32", title: "Main Di Sofa Aja Yuk Deq Mumpung Sepi",
+    thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/uf31gugibde2_xt.jpg?updatedAt=1794762886086", 
+    duration: "7:18", views: 952, likes: 432,
+    category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
+    embedUrl: "https://morencius.com/embed/uf31gugibde2"
+  },
+  {
     id: "vid-31", title: "Skandal Pramugari Terbaru Ampe Crot Di Muka",
     thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/iy8hr66vtkgq_xt.jpg?updatedAt=1794762886111", 
     duration: "1:26", views: 90, likes: 38,

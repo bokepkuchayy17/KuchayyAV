@@ -16,7 +16,7 @@ const videos = [
   {
     id: "vid-31", title: "Skandal Pramugari Terbaru Ampe Crot Di Muka",
     thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/iy8hr66vtkgq_xt.jpg?updatedAt=1794762886111", 
-    duration: "7:18", views: 90, likes: 38,
+    duration: "1:26", views: 90, likes: 38,
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
     embedUrl: "https://morencius.com/embed/iy8hr66vtkgq"
   },

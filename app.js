@@ -14,6 +14,13 @@ const BANNER_AD_LINK = "https://one.toexness.com/a/2sjqpm8yx0"; // Ganti dengan 
 const videos = [
   
   {
+    id: "vid-33", title: "Skandal Anak Kos Mahasiswi Yang Viral",
+    thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/wsui9wvqelkq_xt.jpg?updatedAt=1794762886088", 
+    duration: "10:08", views: 952, likes: 352,
+    category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
+    embedUrl: "https://morencius.com/embed/wsui9wvqelkq"
+  },
+  {
     id: "vid-32", title: "Main Di Sofa Aja Yuk Deq Mumpung Sepi",
     thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/uf31gugibde2_xt.jpg?updatedAt=1794762886086", 
     duration: "1:19", views: 952, likes: 432,

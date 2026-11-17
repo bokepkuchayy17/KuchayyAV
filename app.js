@@ -14,6 +14,13 @@ const BANNER_AD_LINK = "https://one.toexness.com/a/2sjqpm8yx0"; // Ganti dengan 
 const videos = [
   
   {
+    id: "vid-38", title: "Bertiga Langsung Juga Boleh",
+    thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/ptarc77dh7h7_xt.jpg", 
+    duration: "08:25", views: 95, likes: 35,
+    category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
+    embedUrl: "https://morencius.com/embed/ptarc77dh7h7"
+  },
+  {
     id: "vid-37", title: "Dasar ABG Sepi Bentar Udah Mesum Aja",
     thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/wn1fbetaaqcl_xt.jpg?updatedAt=1794762886157", 
     duration: "14:37", views: 1425, likes: 341,

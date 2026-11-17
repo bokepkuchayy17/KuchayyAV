@@ -4,15 +4,17 @@
 const AD_LINK = "https://uplcm.com/4/12170890";
 const AD_LINK_2 = "https://uplcm.com/4/12175415"; 
 
-// 🆕 KONFIGURASI BANNER IKLAN (Ganti link di bawah ini)
-const BANNER_IMG_URL = "https://ik.imagekit.io/7cynulshf/ID_ID_C1_EXT_C2_T1_PROMO_RISK_T2_PERFORMANCE_D-3-3_STATIC_1200x627.jpg?updatedAt=1793724154994"; // Ganti dengan link gambar dari ImageKit
-const BANNER_AD_LINK = "https://one.toexness.com/a/2sjqpm8yx0"; // Ganti dengan link tujuan iklan banner
+// KONFIGURASI BANNER IKLAN
+const BANNER_IMG_URL = "https://ik.imagekit.io/7cynulshf/ID_ID_C1_EXT_C2_T1_PROMO_RISK_T2_PERFORMANCE_D-3-3_STATIC_1200x627.jpg?updatedAt=1793724154994"; 
+const BANNER_AD_LINK = "https://one.toexness.com/a/2sjqpm8yx0"; 
+
+// 🆕 KONFIGURASI LINK TUTORIAL (Ganti link di bawah ini)
+const TUTORIAL_URL = "https://link-video-tutorial-anda.com"; 
 
 // ==========================================
 // DATA VIDEO
 // ==========================================
 const videos = [
-  
   {
     id: "vid-38", title: "Bertiga Langsung Juga Boleh",
     thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/ptarc77dh7h7_xt.jpg", 
@@ -46,7 +48,7 @@ const videos = [
     thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/rrwi85vv8u1c_xt.jpg?updatedAt=1794762885797", 
     duration: "3:10", views: 1072, likes: 1298,
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
-    embedUrl: "https://morencius.com/file/rrwi85vv8u1c"
+    embedUrl: "https://morencius.com/embed/rrwi85vv8u1c" 
   },
   {
     id: "vid-33", title: "Skandal Anak Kos Mahasiswi Yang Viral",
@@ -109,14 +111,14 @@ const videos = [
     thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/Screenshot_2026-11-10-01-40-12-954_com.miui.gallery.jpg?updatedAt=1794672158522", 
     duration: "1:42", views: 238, likes: 45,
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
-    embedUrl: "https://ik.imagekit.io/lojojcfmt/Video%20KuchayyAV/_bokepindo13.motorcycles_bokep-indo-desahannya-enak-banget-pas-di-ewe-bokepindo13.mp4?updatedAt=1794244795203"
+    embedUrl: "https://imagekit.io/player/embed/lojojcfmt/Video%20KuchayyAV/_bokepindo13.motorcycles_bokep-indo-desahannya-enak-banget-pas-di-ewe-bokepindo13.mp4?controls=true&autoplay=false&loop=false&background=%23000000" 
   },
   {
     id: "vid-24", title: "Hijab Pulang Ngaji Lanjut Ngenti",
     thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/Screenshot_2026-11-10-01-38-52-431_com.miui.gallery.jpg?updatedAt=1794672158743", 
     duration: "2:05", views: 8976, likes: 674,
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
-    embedUrl: "https://ik.imagekit.io/lojojcfmt/Video%20KuchayyAV/_bokepindo13.motorcycles_hijab-pulang-ngaji-lanjut-ngenti-part-2-bokep-indo-bokepindo13.mp4?updatedAt=1794244820534"
+    embedUrl: "https://imagekit.io/player/embed/lojojcfmt/Video%20KuchayyAV/_bokepindo13.motorcycles_hijab-pulang-ngaji-lanjut-ngenti-part-2-bokep-indo-bokepindo13.mp4?controls=true&autoplay=false&loop=false&background=%23000000" 
   },
   {
     id: "vid-23", title: "Bokep Indo Ojol Di Hotel Bali",
@@ -130,7 +132,7 @@ const videos = [
     thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/Screenshot_2026-11-10-01-38-23-350_com.miui.gallery.jpg?updatedAt=1794672158384", 
     duration: "1:24", views: 564, likes: 214,
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
-    embedUrl: "https://ik.imagekit.io/lojojcfmt/Video%20KuchayyAV/_bokepindo13.motorcycles_bokep-indo-gadis-sma-di-cari-emak-taunya-ngentot-bokepindo13%20(1).mp4?updatedAt=1794244797019"
+    embedUrl: "https://imagekit.io/player/embed/lojojcfmt/Video%20KuchayyAV/_bokepindo13.motorcycles_bokep-indo-gadis-sma-di-cari-emak-taunya-ngentot-bokepindo13%20(1).mp4?controls=true&autoplay=false&loop=false&background=%23000000" 
   },
   {
     id: "vid-21", title: "Abg kena rudal pacar yang gedeee",
@@ -144,21 +146,21 @@ const videos = [
     thumbnail: "https://ik.imagekit.io/lojojcfmt/Thumbnail%20KuchayyAV/20261106_023455.jpg", 
     duration: "1:22", views: 912, likes: 43,
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
-    embedUrl: "https://ik.imagekit.io/lojojcfmt/Video%20KuchayyAV/_bokepindo13.motorcycles_si-uhty-bilang-agak-perih-tapi-enak-bokepindo13.mp4?updatedAt=1793902007638"
+    embedUrl: "https://imagekit.io/player/embed/lojojcfmt/Video%20KuchayyAV/_bokepindo13.motorcycles_si-uhty-bilang-agak-perih-tapi-enak-bokepindo13.mp4?controls=true&autoplay=false&loop=false&background=%23000000" 
   },
   {
     id: "vid-19", title: "Guru bangsat bwa murid ke kamar mandi cuma mau di icip",
     thumbnail: "https://ik.imagekit.io/lojojcfmt/Thumbnail%20KuchayyAV/20261106_022824.jpg", 
     duration: "1:33", views: 893, likes: 238,
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
-    embedUrl: "https://imagekit.io/player/embed/lojojcfmt/Video%20KuchayyAV/_bokepindo13.motorcycles_guru-bangsat-bwa-murid-ke-kamar-mandi-cuma-mau-di-icip-bokepindo13.mp4?controls=true&autoplay=false&loop=false&background=%23000000&updatedAt=1793901876660&thumbnail=https%3A%2F%2Fik.imagekit.io%2Flojojcfmt%2FVideo%2520KuchayyAV%2F_bokepindo13.motorcycles_guru-bangsat-bwa-murid-ke-kamar-mandi-cuma-mau-di-icip-bokepindo13.mp4%2Fik-thumbnail.jpg%3FupdatedAt%3D1793901876660"
+    embedUrl: "https://imagekit.io/player/embed/lojojcfmt/Video%20KuchayyAV/_bokepindo13.motorcycles_guru-bangsat-bwa-murid-ke-kamar-mandi-cuma-mau-di-icip-bokepindo13.mp4?controls=true&autoplay=false&loop=false&background=%23000000&thumbnail=https%3A%2F%2Fik.imagekit.io%2Flojojcfmt%2FVideo%2520KuchayyAV%2F_bokepindo13.motorcycles_guru-bangsat-bwa-murid-ke-kamar-mandi-cuma-mau-di-icip-bokepindo13.mp4%2Fik-thumbnail.jpg%3FupdatedAt%3D1793901876660"
   },
   {
     id: "vid-18", title: "Abg body badontod",
     thumbnail: "https://ik.imagekit.io/7cynulshf/aak6te5ci96g_xt.jpg", 
     duration: "1:27", views: 23478, likes: 1027,
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
-    embedUrl: "https://ik.imagekit.io/lojojcfmt/Video%20KuchayyAV/_bokepindo13.motorcycles_loading-https-acclaimedbread-com-be3fv-0gp-2iljjkplx-bnzojpmq9-0sptuunvn-sxkyvzsau-kcldkewfw-5hkidjlkl-xmunmolpz-vrzsvtrus-2wlxbynzu-1bxcvdx.mp4"
+    embedUrl: "https://imagekit.io/player/embed/lojojcfmt/Video%20KuchayyAV/_bokepindo13.motorcycles_loading-https-acclaimedbread-com-be3fv-0gp-2iljjkplx-bnzojpmq9-0sptuunvn-sxkyvzsau-kcldkewfw-5hkidjlkl-xmunmolpz-vrzsvtrus-2wlxbynzu-1bxcvdx.mp4?controls=true&autoplay=false&loop=false&background=%23000000" 
   },
   {
     id: "vid-17", title: "bawa pacar cobain hotel jadul",
@@ -557,7 +559,6 @@ function renderHome(page = 1) {
   });
   gridHTML += `</div>`;
 
-  // PAGINASI DENGAN IKLAN
   let paginationHTML = '';
   if (totalPages > 1) {
     paginationHTML = `<div class="pagination">`;
@@ -576,7 +577,6 @@ function renderHome(page = 1) {
     paginationHTML += `</div>`;
   }
 
-  // 🆕 BANNER IKLAN DI BAWAH PAGINASI
   let bannerHTML = '';
   if (BANNER_IMG_URL && BANNER_IMG_URL !== "https://ik.imagekit.io/lojojcfmt/URL_GAMBAR_BANNER_ANDA.jpg") {
     bannerHTML = `
@@ -638,6 +638,11 @@ function renderWatchPage(videoId) {
             <button class="secondary-btn" style="background:#1e1e1e;border-color:#333;color:#fff" onclick="handleDownloadClick()">
               <i class="fa-solid fa-download"></i> Download
             </button>
+            
+            <!-- 🆕 TOMBOL TUTORIAL NONTON -->
+            <a href="${TUTORIAL_URL}" target="_blank" class="secondary-btn" style="text-decoration:none; display:inline-flex; align-items:center; justify-content:center;">
+              <i class="fa-solid fa-circle-question"></i> Tutorial Nonton
+            </a>
             
           </div>
         </div>

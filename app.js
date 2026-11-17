@@ -14,6 +14,13 @@ const BANNER_AD_LINK = "https://one.toexness.com/a/2sjqpm8yx0"; // Ganti dengan 
 const videos = [
   
   {
+    id: "vid-36", title: "Penjahat Kelamin Emang Beda Mainnya",
+    thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/jbwht68ml9c0_xt.jpg?updatedAt=1794762886117", 
+    duration: "07:14", views: 8568, likes: 236,
+    category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
+    embedUrl: "https://morencius.com/embed/jbwht68ml9c0"
+  },
+  {
     id: "vid-35", title: "Berawal Dari Dugeman Berakhir Desah Desahan",
     thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/yccv5uldkzgy_xt.jpg?updatedAt=1794930450480", 
     duration: "2:28", views: 2456, likes: 537,

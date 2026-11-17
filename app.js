@@ -14,6 +14,13 @@ const BANNER_AD_LINK = "https://one.toexness.com/a/2sjqpm8yx0"; // Ganti dengan 
 const videos = [
   
   {
+    id: "vid-35", title: "Berawal Dari Dugeman Berakhir Desah Desahan",
+    thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/yccv5uldkzgy_xt.jpg?updatedAt=1794930450480", 
+    duration: "2:28", views: 2456, likes: 537,
+    category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
+    embedUrl: "https://morencius.com/embed/yccv5uldkzgy"
+  },
+  {
     id: "vid-34", title: "Katanya Sahabatan Tapi Kok Di Masukin",
     thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/rrwi85vv8u1c_xt.jpg?updatedAt=1794762885797", 
     duration: "3:10", views: 1072, likes: 1298,

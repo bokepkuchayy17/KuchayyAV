@@ -9,7 +9,7 @@ const BANNER_IMG_URL = "https://ik.imagekit.io/7cynulshf/ID_ID_C1_EXT_C2_T1_PROM
 const BANNER_AD_LINK = "https://one.toexness.com/a/2sjqpm8yx0"; 
 
 // 🆕 KONFIGURASI LINK TUTORIAL (Ganti link di bawah ini)
-const TUTORIAL_URL = "https://link-video-tutorial-anda.com"; 
+const TUTORIAL_URL = "https://drive.google.com/file/d/1tGCWGwKOU17woCy6a_i0dwQv8eIkWHn4/view?usp=drivesdk"; 
 
 // ==========================================
 // DATA VIDEO

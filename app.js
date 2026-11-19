@@ -15,6 +15,15 @@ const TUTORIAL_URL = "https://drive.google.com/file/d/1tGCWGwKOU17woCy6a_i0dwQv8
 // DATA VIDEO
 // ==========================================
 const videos = [
+
+  
+  {
+    id: "vid-39", title: "BO hijab ternyata masih esempe",
+    thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/25wq1ikb4ia9_xt.jpg?updatedAt=1795102554417",
+    duration: "18:50", views: 952, likes: 352,
+    category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
+    embedUrl: "https://morencius.com/embed/25wq1ikb4ia9"
+  },
   {
     id: "vid-38", title: "Bertiga Langsung Juga Boleh",
     thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/ptarc77dh7h7_xt.jpg", 

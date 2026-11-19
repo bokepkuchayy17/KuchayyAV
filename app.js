@@ -18,9 +18,16 @@ const videos = [
 
   
   {
+    id: "vid-40", title: "Kena hajar ampe lemes",
+    thumbnail: "https://ik.imagekit.io/lojojcfmt/20261103_103716.jpg", 
+    duration: "7:18", views: 952, likes: 352,
+    category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
+    embedUrl: "https://streamtape.com/e/KXGAG4zpB3C00Gg"
+  },
+  {
     id: "vid-39", title: "BO hijab ternyata masih esempe",
     thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/25wq1ikb4ia9_xt.jpg?updatedAt=1795102554417",
-    duration: "18:50", views: 952, likes: 352,
+    duration: "18:50", views: 453, likes: 67,
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
     embedUrl: "https://morencius.com/embed/25wq1ikb4ia9"
   },

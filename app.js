@@ -16,13 +16,12 @@ const TUTORIAL_URL = "https://drive.google.com/file/d/1tGCWGwKOU17woCy6a_i0dwQv8
 // ==========================================
 const videos = [
 
-  
-  {
-    id: "vid-40", title: "Kena hajar ampe lemes",
-    thumbnail: "https://ik.imagekit.io/lojojcfmt/20261103_103716.jpg", 
-    duration: "7:18", views: 952, likes: 352,
-    category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex.",
-    embedUrl: "https://streamtape.com/e/KXGAG4zpB3C00Gg"
+   {
+    id: "vid-40", title: "Dasar ABG Sepi Bentar Udah Mesum Aja",
+    thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/wn1fbetaaqcl_xt.jpg?updatedAt=1794762886157", 
+    duration: "14:37", views: 1425, likes: 341,
+    category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex. KESUSAHAN MENONTON VIDEO? KLIK KOLOM TUTORIAL NONTON DIBAWAH!! ",
+    embedUrl: "https://morencius.com/embed/wn1fbetaaqcl"
   },
   {
     id: "vid-39", title: "BO hijab ternyata masih esempe",

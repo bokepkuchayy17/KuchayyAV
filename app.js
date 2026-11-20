@@ -16,6 +16,21 @@ const TUTORIAL_URL = "https://drive.google.com/file/d/1tGCWGwKOU17woCy6a_i0dwQv8
 // ==========================================
 const videos = [
 
+
+    {
+    id: "vid-43", title: "Delia Tiktoker Blunder ngewe sama pacar",
+    thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/M3ZyL2tzTFUrOG1iNmVEOXdOeGtzTjZjYkxFMTBKUnRJVUZWUzZCbTB0OHh6djA5TGFoeU5WVk5wM0M5OFVpMDo6Ex3m4zpaPp0zxyeZab3X+Q==.jpeg", 
+    duration: "4:65", views: 9754, likes: 764,
+    category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex. KESUSAHAN MENONTON VIDEO? KLIK KOLOM TUTORIAL NONTON DIBAWAH!! ",
+    embedUrl: "https://tv1.indoav.app/e/exFSHcNkDijG"
+  },        
+    {
+    id: "vid-42", title: "Jenny Ngewe di rekam sama Suaminya",
+    thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/aHNCbHZKS0R1QkIvcXU1V0xtY2ZNQmxLZ0tEWDNkcldoTzVIUGpVWkE0YXhvUWlBK241TVNxOHJKNnhYRzVGWDo6Ex3m4zpaPp0zxyeZab3X+Q==.jpeg", 
+    duration: "22:34", views: 145, likes: 30,
+    category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex. KESUSAHAN MENONTON VIDEO? KLIK KOLOM TUTORIAL NONTON DIBAWAH!! ",
+    embedUrl: "https://tv1.indoav.app/e/KWkaJMlftROw"
+  },
     {
     id: "vid-41", title: "Tetangga lagi di tinggal suami",
     thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/NkhvcmtxcklNSVMrNnhaN01HVkZrRmxUZ3dpZkY4TDV2NEtrMHVyYlZuQVk4RlhaYnVURllBR0YvWThZUk5Xdjo6Ex3m4zpaPp0zxyeZab3X+Q==.jpeg", 

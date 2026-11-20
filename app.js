@@ -18,6 +18,13 @@ const videos = [
 
 
     {
+    id: "vid-44", title: "Satu Pura Pura Polos, Satu Lagi Sangean Hyper",
+    thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/emtpQnBMTmZ0cFdsQWhYUFg2clVNc3lWQVdvVWxKWk1WSHl2VmZDcjJOV25pa1dwZm8vVWloZjBRbmd4aVRGb1U4QVhIVzVUTHZyUm4yWW16VGJJT2R1cXAvZithSlVVTkROYytJOTJNUlU9OjoTHebjOlo+nTPHJ5lpvdf5.jpeg", 
+    duration: "28:52", views: 6754, likes: 245,
+    category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex. KESUSAHAN MENONTON VIDEO? KLIK KOLOM TUTORIAL NONTON DIBAWAH!! ",
+    embedUrl: "https://tv1.indoav.app/e/0CDowjVdBY6q"
+  },
+    {
     id: "vid-43", title: "Delia Tiktoker Blunder ngewe sama pacar",
     thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/M3ZyL2tzTFUrOG1iNmVEOXdOeGtzTjZjYkxFMTBKUnRJVUZWUzZCbTB0OHh6djA5TGFoeU5WVk5wM0M5OFVpMDo6Ex3m4zpaPp0zxyeZab3X+Q==.jpeg", 
     duration: "4:65", views: 9754, likes: 764,

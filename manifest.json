@@ -25,5 +25,21 @@
       "type": "image/png",
       "purpose": "any maskable"
     }
+  ],
+  "screenshots": [
+    {
+      "src": "./screenshot-hp.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Tampilan Beranda di HP"
+    },
+    {
+      "src": "./screenshot-laptop.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Tampilan Beranda di Laptop"
+    }
   ]
 }

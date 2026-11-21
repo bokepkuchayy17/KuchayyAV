@@ -18,6 +18,13 @@ const videos = [
 
 
     {
+    id: "vid-47", title: "cewe montok di entot ke enakkan tapi malu malu",
+    thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/ZEpRL1pHN1VFUEtJbnJMb1c2V1NETEg4eHR1aVdQbzd6WkYyK0FzT3BVS1pmZ214aytxWEE0T3FiQy9CcVBvQnFHamtjRWR1QTRtRkxScU9rQnVzQ2c9PTo6Ex3m4zpaPp0zxyeZab3X+Q==.jpeg", 
+    duration: "1:71", views: 1425, likes: 341,
+    category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex. KESUSAHAN MENONTON VIDEO? KLIK KOLOM TUTORIAL NONTON DIBAWAH!! ",
+    embedUrl: "https://tv1.indoav.app/e/UpzwBqhI8yI7"
+  },
+    {
     id: "vid-46", title: "cewe cindo sange minta masukin ke memek mulus",
     thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/cno5WnBGSTYyQkRyUktGQ2hSbmFZK2JRaWhnT3pKRFNxR3pmTXNJVDhFOG1CL3JxSlV0aFhTaW5raWdtMDdlR1RESkwxRTN3bk1EK2dBaEpzaHBzMkE9PTo6Ex3m4zpaPp0zxyeZab3X+Q==.jpeg", 
     duration: "11:67", views: 24578, likes: 783,

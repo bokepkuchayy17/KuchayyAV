@@ -18,6 +18,13 @@ const videos = [
 
 
     {
+    id: "vid-50", title: "ABG SMA Di Ospek KK Osis",
+    thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/cisyZ3l4UEJKSEdBYXRTOXA0MTVzS2lLUTVNYkpmUzh3bksvTlFNQjhDST06OhMd5uM6Wj6dM8cnmWm91_k=.jpeg", 
+    duration: "1:45", views: 3087, likes: 985,
+    category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex. KESUSAHAN MENONTON VIDEO? KLIK KOLOM TUTORIAL NONTON DIBAWAH!! ",
+    embedUrl: "https://tv1.indoav.app/e/MqoAaYV5DZ2b"
+  },
+    {
     id: "vid-49", title: "Ngentot Binor Pake Lingerie",
     thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/cnpWZHVSZFVCaUk3aVpNQXh6K3lzdFdkNXFuWHpjbU1XNkR6RUpOWUV4Y21lZ0hzTVg5Z3JmRjJXaE9adVAvS3RDelNjOHdIaCt4N0NhYzJ3UW51Wmc9PTo6Ex3m4zpaPp0zxyeZab3X+Q==.jpeg", 
     duration: "7:32", views: 1475, likes: 781,

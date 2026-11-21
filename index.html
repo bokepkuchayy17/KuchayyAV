@@ -104,5 +104,12 @@
   
   <div id="toast" role="status" aria-live="polite"></div>
   <button id="scrollTopBtn" title="Kembali ke atas"><i class="fa-solid fa-arrow-up"></i></button>
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js');
+    });
+  }
+  </script>
 </body>
 </html>

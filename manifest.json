@@ -1,17 +1,22 @@
 {
   "name": "Kuchayy AV",
   "short_name": "KuchayyAV",
-  "description": "Platform streaming video gratis dengan koleksi video Bok3p terbaru dan terlengkap.",
+  "description": "Platform streaming video gratis dengan koleksi video Bok3p Terbaru dan terlengkap.",
   "id": "/?source=pwa",
   "start_url": "/KuchayyAV/?source=pwa",
   "scope": "/KuchayyAV/",
   "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
   "orientation": "portrait-primary",
   "lang": "id",
   "dir": "ltr",
   "background_color": "#000000",
   "theme_color": "#000000",
   "categories": ["entertainment", "video"],
+  "prefer_related_applications": false,
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
   "icons": [
     {
       "src": "./icon-192.png",
@@ -41,5 +46,37 @@
       "form_factor": "wide",
       "label": "Tampilan Beranda di Laptop"
     }
-  ]
+  ],
+  "shortcuts": [
+    {
+      "name": "Trending",
+      "short_name": "Trending",
+      "description": "Lihat video yang sedang trending",
+      "url": "/KuchayyAV/?sort=trending",
+      "icons": [{ "src": "./icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Terbaru",
+      "short_name": "Terbaru",
+      "description": "Lihat video yang baru diunggah",
+      "url": "/KuchayyAV/?sort=latest",
+      "icons": [{ "src": "./icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Random",
+      "short_name": "Random",
+      "description": "Putar video secara acak",
+      "url": "/KuchayyAV/?sort=random",
+      "icons": [{ "src": "./icon-192.png", "sizes": "192x192" }]
+    }
+  ],
+  "share_target": {
+    "action": "/KuchayyAV/",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
 }

@@ -10,6 +10,7 @@ const BANNER_AD_LINK = "https://one.toexness.com/a/2sjqpm8yx0";
 
 // 🆕 KONFIGURASI LINK TUTORIAL (Ganti link di bawah ini)
 const TUTORIAL_URL = "https://drive.google.com/file/d/1tGCWGwKOU17woCy6a_i0dwQv8eIkWHn4/view?usp=drivesdk"; 
+const TUTORIAL_URL_2 = "https://drive.google.com/file/d/1HNC18dicp5FB24Wqzc6S8fIp5dWryhG1/view?usp=drivesdk"; 
 
 // ==========================================
 // DATA VIDEO
@@ -712,7 +713,7 @@ function renderWatchPage(videoId) {
           <!-- 🆕 KOTAK PERINGATAN JIKA VIDEO ERROR -->
           <div class="video-error-notice">
             <i class="fa-solid fa-triangle-exclamation"></i>
-            <span>Jika video tidak bisa terputar, silakan ikuti petunjuknya <a href="${TUTORIAL_URL}" target="_blank">di sini</a>.</span>
+            <span>Jika video tidak bisa terputar, silakan ikuti petunjuknya <a href="${TUTORIAL_URL_2}" target="_blank">di sini</a>.</span>
           </div>
           <!-- AKHIR KOTAK PERINGATAN -->
 

@@ -15,8 +15,6 @@ const TUTORIAL_URL = "https://drive.google.com/file/d/1tGCWGwKOU17woCy6a_i0dwQv8
 // DATA VIDEO
 // ==========================================
 const videos = [
-
-
     {
     id: "vid-50", title: "ABG SMA Di Ospek KK Osis",
     thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/cisyZ3l4UEJKSEdBYXRTOXA0MTVzS2lLUTVNYkpmUzh3bksvTlFNQjhDST06OhMd5uM6Wj6dM8cnmWm91_k=.jpeg", 
@@ -34,28 +32,28 @@ const videos = [
     {
     id: "vid-48", title: "Aku digoyang teman suamiku",
     thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/MkpLTnZIK1JiVjh1b3ovYWhMSitPaHpwN2pZU28yR2xVSWZvcVhNZmtuU1pXR3ErUVhFQTIwRlNjY05WWExSYzo6Ex3m4zpaPp0zxyeZab3X+Q==.jpeg", 
-    duration: "5:60", views: 3452, likes: 349,
+    duration: "6:00", views: 3452, likes: 349, // Diperbaiki dari 5:60
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex. KESUSAHAN MENONTON VIDEO? KLIK KOLOM TUTORIAL NONTON DIBAWAH!! ",
     embedUrl: "https://tv1.indoav.app/e/EIC4sroPkDL4"
   },
     {
     id: "vid-47", title: "cewe montok di entot ke enakkan tapi malu malu",
     thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/ZEpRL1pHN1VFUEtJbnJMb1c2V1NETEg4eHR1aVdQbzd6WkYyK0FzT3BVS1pmZ214aytxWEE0T3FiQy9CcVBvQnFHamtjRWR1QTRtRkxScU9rQnVzQ2c9PTo6Ex3m4zpaPp0zxyeZab3X+Q==.jpeg", 
-    duration: "1:71", views: 1425, likes: 341,
+    duration: "2:11", views: 1425, likes: 341, // Diperbaiki dari 1:71
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex. KESUSAHAN MENONTON VIDEO? KLIK KOLOM TUTORIAL NONTON DIBAWAH!! ",
     embedUrl: "https://tv1.indoav.app/e/UpzwBqhI8yI7"
   },
     {
     id: "vid-46", title: "cewe cindo sange minta masukin ke memek mulus",
     thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/cno5WnBGSTYyQkRyUktGQ2hSbmFZK2JRaWhnT3pKRFNxR3pmTXNJVDhFOG1CL3JxSlV0aFhTaW5raWdtMDdlR1RESkwxRTN3bk1EK2dBaEpzaHBzMkE9PTo6Ex3m4zpaPp0zxyeZab3X+Q==.jpeg", 
-    duration: "11:67", views: 24578, likes: 783,
+    duration: "12:07", views: 24578, likes: 783, // Diperbaiki dari 11:67
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex. KESUSAHAN MENONTON VIDEO? KLIK KOLOM TUTORIAL NONTON DIBAWAH!! ",
     embedUrl: "https://tv1.indoav.app/e/ABhJlFvtTcds"
   },
     {
     id: "vid-45", title: "Cewek Hijab cantik ternyata jago di ranjang",
     thumbnail: "https://ik.imagekit.io/7cynulshf/Thumbnail%20KuchayyAV/VnhhTThRSktCVWhsS0x0YzlaY1p2M3Bha3BwL1ZySnpKaFZOajlyL0svSTh0WEdWVndvZkVWdkZYWDZyK2xFVGJhZVMrbVdtM2JMTjhkVmMwbmZSa0E9PTo6Ex3m4zpaPp0zxyeZab3X+Q==.jpeg", 
-    duration: "3:63", views: 145, likes: 24,
+    duration: "4:03", views: 145, likes: 24, // Diperbaiki dari 3:63
     category: "Lokal", description: "abg, skandal, terbaru, viral, bocil, tocil, hyper, keenakan, pacar, mulus, meki pink, cantik, tobrut, ngentod pacar, ngewe pacar, tocil hyper, keenakan bngett, sange parah, cewek colmek, coolmex. KESUSAHAN MENONTON VIDEO? KLIK KOLOM TUTORIAL NONTON DIBAWAH!! ",
     embedUrl: "https://tv1.indoav.app/e/ulWH3tBcycCx"
   },
@@ -710,6 +708,14 @@ function renderWatchPage(videoId) {
               </div>
             </div>
           </div>
+          
+          <!-- 🆕 KOTAK PERINGATAN JIKA VIDEO ERROR -->
+          <div class="video-error-notice">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <span>Jika video tidak bisa terputar, silakan ikuti petunjuknya <a href="${TUTORIAL_URL}" target="_blank">di sini</a>.</span>
+          </div>
+          <!-- AKHIR KOTAK PERINGATAN -->
+
           <h1 class="detail-title">${video.title}</h1>
           <div>${video.category ? `<span class="badge"><i class="fa-solid fa-folder" style="margin-right:4px"></i> ${video.category}</span>` : ''}</div>
           <p class="video-desc">${video.description || 'Tidak ada deskripsi.'}</p>

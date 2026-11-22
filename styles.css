@@ -66,3 +66,48 @@
     border-radius: 7px;
   }
 }
+
+/* ==========================================
+   🆕 KOTAK PERINGATAN VIDEO ERROR
+========================================== */
+.video-error-notice {
+  background: rgba(255, 152, 0, 0.1); /* Latar oranye transparan */
+  border: 1px solid rgba(255, 152, 0, 0.3);
+  border-left: 4px solid #ff9800; /* Garis tebal oranye di kiri */
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin: 15px 0;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text);
+}
+
+.video-error-notice i {
+  color: #ff9800;
+  font-size: 18px;
+}
+
+.video-error-notice a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.video-error-notice a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.video-error-notice a:hover {
+  background: rgba(255, 255, 255, 0.2);
+                                                                                                                                                                                                                                                                         }
